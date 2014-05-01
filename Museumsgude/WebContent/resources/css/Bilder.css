@@ -1,0 +1,90 @@
+@CHARSET "ISO-8859-1";
+body .page {
+	width: 100%;
+	height: 100%;
+}
+
+
+body .page .header {
+	position: absolute;
+	top: 0;
+	width: 100%;
+	height: 21px;
+	color: #ccc;
+	background-color: #555;
+	font-weight: normal;
+	font-size: 15px;
+	font-family: Calibri;
+	text-shadow: 0 0 0;
+	text-align: center;
+	
+	z-index: 20;
+}
+body .page .header #aktiv {
+	font-weight: bold;
+	color: white;
+}
+
+body .page .header .linksbündig {
+	display: inline-block;
+	float: left;
+	margin: 1px 5px 1px 5px;
+}
+body .page .header .zentriert {
+	display: inline-block;
+	margin: 1px 5px 1px 5px;
+}
+body .page .header .rechtsbündig {
+	display: inline-block;
+	float: right;
+	margin: 1px 5px 1px 5px;
+}
+/*===content===*/
+body .page .content {
+	position: absolute;
+	height: 500px;
+	width: 1000px;
+	top: 50%;
+	left: 50%;
+	margin-top: -260px;
+	margin-left: -500px;
+	
+	z-index: 5;
+	
+	color: #eee;
+	background-color: #bbb;
+	font-weight: normal;
+	font-size: 15px;
+	font-family: Calibri;
+	text-shadow: 0 0 0;
+	text-align: center;
+	
+}
+body #a .content img {
+	max-width: 1000px;
+	max-height: 500px;
+}
+
+body #b .content {
+	text-align: left;
+	overflow: scroll;
+	padding: 0 15px;
+}
+/*===footer===*/
+body .page .footer {
+	position: fixed;
+	display: block;
+	bottom: 0;
+	width: 100%;
+	height: 100px;
+	color: white;
+	background-color: #565656;
+	font-weight: normal;
+	font-size: 15px;
+	font-family: Calibri;
+	text-shadow: 0 0 0;
+	text-align: center;
+	margin: 0 0 0 0;
+	
+	z-index: 10;
+}
