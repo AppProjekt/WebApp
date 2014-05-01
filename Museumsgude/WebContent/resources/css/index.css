@@ -1,8 +1,9 @@
 @CHARSET "ISO-8859-1";
 
-body .page {
+body div.page {
 	width: 100%;
 	height: 100%;
+	background-color: #eee;
 }
 
 body .page .header {
@@ -61,6 +62,33 @@ body .page .content {
 	text-align: center;
 }
 
+body div#a .content {
+	position: absolute;
+	width: 1000px;
+	height: auto;
+	left: 50%;
+
+	margin-left: -500px;
+	z-index: 5;
+	color: #eee;
+	background-color: #eee;
+	font-weight: normal;
+	font-size: 15px;
+	font-family: Calibri;
+	text-shadow: 0 0 0;
+	text-align: center;
+	
+}
+
+body div#a .content div#container {
+	width: 1000px;
+	
+}
+
+body div#a .content div#container .item a img {
+	max-width: 330px;
+	margin-bottom: 2px;
+}
 /*===footer===*/
 body .page .footer {
 	position: fixed;
