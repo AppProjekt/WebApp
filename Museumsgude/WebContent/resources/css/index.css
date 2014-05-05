@@ -3,7 +3,7 @@
 body div.page {
 	width: 100%;
 	height: 100%;
-	background-color: #eee;
+	background-color: #bbb;
 }
 
 body .page .header {
@@ -62,26 +62,6 @@ body .page .content {
 	text-align: center;
 }
 
-body .page .content_startseite {
-	position: absolute;
-	/*height: 500px;*/
-	width: 1700px;
-	top: 31%;
-	/*bottom: 5%;*/
-	left: 33%;
-	margin-top: -260px;
-	margin-bottom: 45px;
-	margin-left: -500px;	
-	z-index: 5;
-	color: #eee;
-	/*background-color: #bbb;*/
-	font-weight: normal;
-	font-size: 15px;
-	font-family: Calibri;
-	text-shadow: 0 0 0;
-	text-align: center;	
-}
-
 body div#a .content {
 	position: absolute;
 	width: 1000px;
@@ -91,7 +71,7 @@ body div#a .content {
 	
 	z-index: 5;
 	color: #eee;
-	background-color: #eee;
+	background-color: transparent;
 	font-weight: normal;
 	font-size: 15px;
 	font-family: Calibri;
@@ -99,16 +79,11 @@ body div#a .content {
 	text-align: center;	
 }
 
-body div#a .content div#container {
-	width: 1000px;
-}
-
 body div#a div#container .item a img {
-	max-width: 325px;
 	margin-bottom: 5px;
 }
 /*===footer===*/
-body .page .footer {
+body #footer {
 	position: fixed;
 	display: block;
 	bottom: 0;
@@ -124,7 +99,7 @@ body .page .footer {
 	margin: 0 0 0 0;
 	z-index: 10;
 }
-
+/*
 body .page .footer_start {
 	position: fixed;
 	display: block;
@@ -141,4 +116,4 @@ body .page .footer_start {
 	margin: 0 0 0 0;
 	z-index: 10;
 }
-	
+	*/

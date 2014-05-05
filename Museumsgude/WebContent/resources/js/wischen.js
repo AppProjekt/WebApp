@@ -12,11 +12,6 @@ $('body #a').live("swiperight", function(){
 
 /*==Auf Seite B==*/
 
-$('body #b').live("swipeleft", function(){
-        /*var nextpage = $("#a").next('div[data-role="page"]');
-        $.mobile.changePage(nextpage, 'slide');*/
-      });
-
 $('body #b').live("swiperight", function(){
        var prevpage = $("#a");
         $.mobile.changePage(prevpage, 'slide', true);
@@ -29,10 +24,10 @@ $('body #c').live("swipeleft", function(){
         $.mobile.changePage(nextpage, 'slide');
       });
 
-$('body #c').live("swiperight", function(){
-       /* var prevpage = $("#b").prev('div[data-role="page"]');
-        $.mobile.changePage(prevpage, 'slide', true);*/
-      });
+
+/*=========================*/
+
+/*=========================*/
 
 $('body #a').live('pagecreate', function(e){
 	$("#Bild1").click(function(e) {
