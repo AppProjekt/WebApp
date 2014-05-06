@@ -1,12 +1,15 @@
 @CHARSET "ISO-8859-1";
-
-body div.page {
+/* ================
+	Anfang Index
+		=============== */
+		
+body div.indexpage {
 	width: 100%;
 	height: 100%;
 	background-color: #bbb;
 }
 
-body .page .header {
+body div.indexpage div.indexheader {
 	position: fixed;
 	top: 0;
 	width: 100%;
@@ -21,30 +24,26 @@ body .page .header {
 	z-index: 20;
 }
 
-body .page .header #aktiv {
+body .indexpage .indexheader #aktiv {
 	font-weight: bold;
 	color: white;
 }
 
-body .page .header .linksbündig {
-	display: inline-block;
+body .indexpage .indexheader .linksbündig {
 	float: left;
-	margin: 1px 5px 1px 5px;
 }
 
-body .page .header .zentriert {
+body .indexpage .indexheader span {
 	display: inline-block;
 	margin: 1px 5px 1px 5px;
 }
 
-body .page .header .rechtsbündig {
-	display: inline-block;
+body .indexpage .indexheader .rechtsbündig {
 	float: right;
-	margin: 1px 5px 1px 5px;
 }
 
-/*===content===*/
-body .page .content {
+/*===Index content===*/
+body .indexpage .indexcontent {
 	position: absolute;
 	height: 500px;
 	width: 1000px;
@@ -62,7 +61,7 @@ body .page .content {
 	text-align: center;
 }
 
-body div#a .content {
+body div#indexa .indexcontent {
 	position: absolute;
 	width: 1000px;
 	height: auto;
@@ -79,9 +78,100 @@ body div#a .content {
 	text-align: center;	
 }
 
-body div#a div#container .item a img {
+body div#indexa div#container .item a img {
 	margin-bottom: 5px;
 }
+/*Ende Index*/
+
+/*==================
+	Anfang Bilder
+		====================*/
+
+body .bilda,
+body .bildb,
+body .bildc {
+	width: 100%;
+	height: 100%;
+}
+
+
+body .bilda .bildheader,
+body .bildb .bildheader,
+body .bildc .bildheader {
+	position: absolute;
+	top: 0;
+	width: 100%;
+	height: 21px;
+	color: #ccc;
+	background-color: #555;
+	font-weight: normal;
+	font-size: 15px;
+	font-family: Calibri;
+	text-shadow: 0 0 0;
+	text-align: center;
+	
+	z-index: 20;
+}
+.bildheader #aktiv {
+	font-weight: bold;
+	color: white;
+}
+.bildheader span {
+	display: inline-block;
+	margin: 1px 5px 1px 5px;
+}
+.bildheader .linksbündig {
+	float: left;
+}
+
+.bildheader .rechtsbündig {
+	float: right;
+}
+.bildheader .zurübersicht {
+	background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0,#555),color-stop(1,#333));
+	padding: 10px 20px 10px 20px;
+	font-size: 16px;
+}
+/*===content===*/
+
+body div .bildcontent {
+	position: absolute;
+	height: 500px;
+	width: 1000px;
+	top: 50%;
+	left: 50%;
+	margin-top: -260px;
+	margin-left: -500px;
+	
+	z-index: 5;
+	
+	color: #eee;
+	background-color: #bbb;
+	font-weight: normal;
+	font-size: 15px;
+	font-family: Calibri;
+	text-shadow: 0 0 0;
+	text-align: center;
+	
+}
+
+body .bilda .bildcontent img {
+	max-width: 1000px;
+	max-height: 500px;
+}
+
+body .bildb .bildcontent {
+	text-align: left;
+	overflow: scroll !important;
+	padding: 0 15px;
+}
+
+
+
+/*======================
+	Ende Bilder
+		======================*/
+
 /*===footer===*/
 body #footer {
 	position: fixed;

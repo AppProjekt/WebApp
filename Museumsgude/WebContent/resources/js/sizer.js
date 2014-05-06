@@ -3,8 +3,11 @@ var Contentbreite = Bildschirmbreite - 200;
 	var HalfContentbreite = (Contentbreite / 2) * -1; 
 
 $("#container").css( "width", Contentbreite );
-$(".content").css( "width", Contentbreite );
-$(".content").css( "margin-left", HalfContentbreite );
+$(".indexcontent").css( "width", Contentbreite );
+$(".indexcontent").css( "margin-left", HalfContentbreite );
+
+$(".bildcontent").css( "width", Contentbreite );
+$(".bildcontent").css( "margin-left", HalfContentbreite );
 
 /*Player*/
 $("#jp_container_1").css( "width", Bildschirmbreite );
