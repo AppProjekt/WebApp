@@ -10,8 +10,11 @@
     <link rel="stylesheet" href="resources/css/default.css"/>
     <link rel="stylesheet" href="resources/css/component.css"/>
     <script type="text/javascript" src="resources/js/wischen.js"></script>
-    <script type="text/javascript" src="resources/js/jquery.jplayer.min.js"></script>
+    
       <link type="text/css" href="resources/css/jPlayer/jplayer.blue.monday.css" rel="stylesheet" />
+     
+     
+     
      </head>
   <body>
     <div class="indexpage" data-role="page" id="indexa"> 
@@ -178,4 +181,20 @@
      <script src="resources/js/masonry.pkgd.min.js"></script>
 		<script src="resources/js/imagesloaded.js"></script>    
  
+ <script type="text/javascript" src="resources/js/jPlayer/jquery.jplayer.min.js"></script>
+ <script type="text/javascript">
+    $(document).ready(function(){
+      $("#jquery_jplayer_1").jPlayer({
+        ready: function () {
+          $(this).jPlayer("setMedia", {
+            title: "Bubble",
+            m4a: "http://www.jplayer.org/audio/m4a/Miaow-07-Bubble.m4a",
+            oga: "http://www.jplayer.org/audio/ogg/Miaow-07-Bubble.ogg"
+          });
+        },
+        swfPath: "/js",
+        supplied: "m4a, oga"
+      });
+    });
+  </script>
 </html>
