@@ -5,7 +5,7 @@
   height: 85%;
 }
 
-.Bildinfo p {
+.Bildinfo input {
   float: right;
   max-width: 40%;
   -webkit-transform: translateY(-50%);
@@ -23,8 +23,13 @@
   	transform: translateY(-50%);
 }
 
-.mixin p {
+.mixin input{
   @include vertical-align;
+}
+
+.dotted
+{
+    border: 1px dotted maroon;
 }
 
 
@@ -60,7 +65,11 @@ section {
   border-radius: .5em;
   color: white;
 }
-  img, p {
+  img, input {
   padding: 1em;
+  }
+  
+  button{
+  float: right;
   }
 }
