@@ -182,8 +182,23 @@
 <script type="text/javascript">
 
     $(function() { 
-    	var Hash = window.location.hash;
-    	var Bildnr = Hash.substring(1, 3);
+    	var BildnrInBug = "in";
+		  var Hash = window.location.hash;
+		  var Bildnr = Hash.substring(1, 3);
+		  if (Bildnr == BildnrInBug) {
+			  $("#jquery_jplayer_1").jPlayer({
+			         ready: function () {
+			          $(this).jPlayer("setMedia", {
+			             title: "Kein Bild ausgewählt.",
+			            mp3: " "
+			          });
+			        
+			        },
+			        swfPath: "/js",
+			        supplied: "mp3",
+			        
+			      });
+		  } else {
     	var Titel = Bildnr;
     	
   var Quelle = "resources/media/" + Bildnr + ".mp3";
@@ -191,7 +206,7 @@
        $("#jquery_jplayer_1").jPlayer({
          ready: function () {
           $(this).jPlayer("setMedia", {
-             title: Titel,
+             title: "Bild " + Titel,
             mp3: Quelle
           });
         
@@ -200,7 +215,7 @@
         supplied: "mp3",
         
       });
-    
+	}
 });
 
 	function Play () {
@@ -210,11 +225,14 @@
 	
 	
 	$( "#TrackwahlPlay" ).click(function() {
-		
+	var BildnrInBug = "in";
 		  var Hash = window.location.hash;
 		  var Bildnr = Hash.substring(1, 3);
+		  if (Bildnr == BildnrInBug) {
+			  $("#jquery_jplayer_1").jPlayer("play");
+		  } else {
 		  var Titel = $("#jp_container_1 div div.jp-details ul li span").html();
-		  if (Bildnr != Titel) {
+		  if ("Bild " + Bildnr != Titel) {
 			  var Titel = Bildnr;
 				
 			  var Quelle = "resources/media/" + Bildnr + ".mp3"
@@ -226,7 +244,7 @@
 				       $("#jquery_jplayer_1").jPlayer({
 				         ready: function () {
 				          $(this).jPlayer("setMedia", {
-				             title: Titel,
+				             title: "Bild " + Titel,
 				            mp3: Quelle
 				          });
 				          
@@ -240,7 +258,8 @@
 					}
 			  
 		   else {
-			
+			   
+		  }
 		  }
 	});
   </script>
