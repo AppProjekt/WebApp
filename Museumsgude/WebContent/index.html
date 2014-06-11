@@ -14,35 +14,35 @@
     
       <link type="text/css" href="resources/css/jPlayer/jplayer.blue.monday.css" rel="stylesheet" />      
      </head>
-  <body>
+  <body onload="Trackwahl ()">
     <div class="indexpage" data-role="page" id="indexa"> 
     	<div class="indexheader"><span class="linksbündig">| Ueber uns |</span><span id="aktiv">| Startseite |</span><span class="rechtsbündig">| Lageplan |</span></div> 
     	<div class="container_new">
 			<ul class="grid effect-1" id="grid">
-				<li><a href="#" id="Bild1"><img src="resources/images/1.png"></a></li>
-				<li><a href="#" id="Bild2"><img src="resources/images/2.png"></a></li>
-				<li><a href="#" id="Bild3"><img src="resources/images/3.png"></a></li>
-				<li><a href="#" id="Bild4"><img src="resources/images/4.png"></a></li>
-				<li><a href="#" id="Bild5"><img src="resources/images/5.png"></a></li>
-				<li><a href="#" id="Bild6"><img src="resources/images/2.png"></a></li>
-				<li><a href="#" id="Bild7"><img src="resources/images/3.png"></a></li>
-				<li><a href="#" id="Bild8"><img src="resources/images/4.png"></a></li>
-				<li><a href="#" id="Bild9"><img src="resources/images/3.png"></a></li>
-				<li><a href="#" id="Bild10"><img src="resources/images/5.png"></a></li>
-				<li><a href="#" id="Bild11"><img src="resources/images/3.png"></a></li>
-				<li><a href="#" id="Bild12"><img src="resources/images/2.png"></a></li>
-				<li><a href="#" id="Bild13"><img src="resources/images/4.png"></a></li>
-				<li><a href="#" id="Bild14"><img src="resources/images/5.png"></a></li>
-				<li><a href="#" id="Bild15"><img src="resources/images/4.png"></a></li>
-				<li><a href="#" id="Bild16"><img src="resources/images/5.png"></a></li>
-				<li><a href="#" id="Bild17"><img src="resources/images/3.png"></a></li>
-				<li><a href="#" id="Bild18"><img src="resources/images/1.png"></a></li>
-				<li><a href="#" id="Bild19"><img src="resources/images/5.png"></a></li>
-				<li><a href="#" id="Bild20"><img src="resources/images/4.png"></a></li>
-				<li><a href="#" id="Bil21"><img src="resources/images/3.png"></a></li>
-				<li><a href="#" id="Bild22"><img src="resources/images/5.png"></a></li>
-				<li><a href="#" id="Bild23"><img src="resources/images/2.png"></a></li>
-				<li><a href="#" id="Bild24"><img src="resources/images/1.png"></a></li>
+				<li onclick="Mediaplayer ()"><a href="#" id="Bild1"><img src="resources/images/1.png"></a></li>
+				<li onclick="Mediaplayer ()"><a href="#" id="Bild2"><img src="resources/images/2.png"></a></li>
+				<li onclick="Mediaplayer ()"><a href="#" id="Bild3"><img src="resources/images/3.png"></a></li>
+				<li onclick="Mediaplayer ()"><a href="#" id="Bild4"><img src="resources/images/4.png"></a></li>
+				<li onclick="Mediaplayer ()"><a href="#" id="Bild5"><img src="resources/images/5.png"></a></li>
+				<li onclick="Mediaplayer ()"><a href="#" id="Bild6"><img src="resources/images/2.png"></a></li>
+				<li onclick="Mediaplayer ()"><a href="#" id="Bild7"><img src="resources/images/3.png"></a></li>
+				<li onclick="Mediaplayer ()"><a href="#" id="Bild8"><img src="resources/images/4.png"></a></li>
+				<li onclick="Mediaplayer ()"><a href="#" id="Bild9"><img src="resources/images/3.png"></a></li>
+				<li onclick="Mediaplayer ()"><a href="#" id="Bild10"><img src="resources/images/5.png"></a></li>
+				<li onclick="Mediaplayer ()"><a href="#" id="Bild11"><img src="resources/images/3.png"></a></li>
+				<li onclick="Mediaplayer ()"><a href="#" id="Bild12"><img src="resources/images/2.png"></a></li>
+				<li onclick="Mediaplayer ()"><a href="#" id="Bild13"><img src="resources/images/4.png"></a></li>
+				<li onclick="Mediaplayer ()"><a href="#" id="Bild14"><img src="resources/images/5.png"></a></li>
+				<li onclick="Mediaplayer ()"><a href="#" id="Bild15"><img src="resources/images/4.png"></a></li>
+				<li onclick="Mediaplayer ()"><a href="#" id="Bild16"><img src="resources/images/5.png"></a></li>
+				<li onclick="Mediaplayer ()"><a href="#" id="Bild17"><img src="resources/images/3.png"></a></li>
+				<li onclick="Mediaplayer ()"><a href="#" id="Bild18"><img src="resources/images/1.png"></a></li>
+				<li onclick="Mediaplayer ()"><a href="#" id="Bild19"><img src="resources/images/5.png"></a></li>
+				<li onclick="Mediaplayer ()"><a href="#" id="Bild20"><img src="resources/images/4.png"></a></li>
+				<li onclick="Mediaplayer ()"><a href="#" id="Bil21"><img src="resources/images/3.png"></a></li>
+				<li onclick="Mediaplayer ()"><a href="#" id="Bild22"><img src="resources/images/5.png"></a></li>
+				<li onclick="Mediaplayer ()"><a href="#" id="Bild23"><img src="resources/images/2.png"></a></li>
+				<li onclick="Mediaplayer ()"><a href="#" id="Bild24"><img src="resources/images/1.png"></a></li>
 			</ul>
 		</div>
     	
@@ -178,19 +178,42 @@
 		
 		<script type="text/javascript" src="resources/js/jPlayer/jquery.jplayer.min.js"></script>
   <script type="text/javascript">
-     $(document).ready(function(){
+  function Mediaplayer () {
+	  
+  
+	  
+	  $("#jquery_jplayer_1").jPlayer("destroy");
+	  /*alert("mediadestroyed");*/
+	        
+	  
+	  window.setTimeout("Trackwahl ()", 500);
+	  /*alert("timeoutgestartet");*/
+	  
+  }
+  
+	function Trackwahl (){
+  var Hash = window.location.hash;
+  var Bildnr = Hash.substring(1, 3);
+  var Titel = Bildnr;
+  /*alert(Titel);*/
+  var Quelle = "http://www.jplayer.org/audio/m4a/Miaow-01-Bubble.m4a"; /*"resources/media/" + Bildnr + ".m4a"*/
+ /* alert("variablengesetzt");*/
+  
+  
+    $(document).ready(function(){
        $("#jquery_jplayer_1").jPlayer({
          ready: function () {
           $(this).jPlayer("setMedia", {
-             title: "Bubble",
-            m4a: "http://www.jplayer.org/audio/m4a/Miaow-07-Bubble.m4a",
-            oga: "http://www.jplayer.org/audio/ogg/Miaow-07-Bubble.ogg"
+             title: Titel,
+            m4a: Quelle
           });
+          /*alert("trackgewählt");*/
         },
         swfPath: "/js",
-        supplied: "m4a, oga",
+        supplied: "m4a",
         
       });
     });
+	}
   </script>  
 </html>
