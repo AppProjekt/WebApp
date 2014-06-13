@@ -22,7 +22,9 @@ function findById_1(id) {
 }
 
 function renderDetails_1(bildtexte) {
-	$('#text1').val(bildtexte.text);
+	/*alert(bildtexte.text);*/
+	var Bildtext = bildtexte.text;
+	$('#text1').text(Bildtext);
 }
 
 //Text 2
