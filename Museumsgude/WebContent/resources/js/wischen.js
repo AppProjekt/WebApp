@@ -94,167 +94,167 @@ $('.bilda').live('pagecreate', function(e){
 /*=========================*/
 
 $('body #indexa').live('pagecreate', function(e){
-	$("#Bild1").click(function(e) {
+	$("#1").click(function(e) {
 		$.mobile.changePage('#01a', 'slidedown');
 	});
 });
 
 $('body #indexa').live('pagecreate', function(e){
-	$("#Bild2").click(function(e) {
+	$("#2").click(function(e) {
 		$.mobile.changePage('#02a', 'slidedown');
 	});
 });
 
 
 $('body #indexa').live('pagecreate', function(e){
-	$("#Bild3").click(function(e) {
+	$("#3").click(function(e) {
 		$.mobile.changePage('#03a', 'slidedown');
 	});
 });
 
 
 $('body #indexa').live('pagecreate', function(e){
-	$("#Bild4").click(function(e) {
+	$("#4").click(function(e) {
 		$.mobile.changePage('#04a', 'slidedown');
 	});
 });
 
 
 $('body #indexa').live('pagecreate', function(e){
-	$("#Bild5").click(function(e) {
+	$("#5").click(function(e) {
 		$.mobile.changePage('#05a', 'slidedown');
 	});
 });
 
 
 $('body #indexa').live('pagecreate', function(e){
-	$("#Bild6").click(function(e) {
+	$("#6").click(function(e) {
 		$.mobile.changePage('#06a', 'slidedown');
 	});
 });
 
 
 $('body #indexa').live('pagecreate', function(e){
-	$("#Bild7").click(function(e) {
+	$("#7").click(function(e) {
 		$.mobile.changePage('#07b', 'slidedown');
 	});
 });
 
 
 $('body #indexa').live('pagecreate', function(e){
-	$("#Bild8").click(function(e) {
+	$("#8").click(function(e) {
 		$.mobile.changePage('#08b', 'slidedown');
 	});
 });
 
 
 $('body #indexa').live('pagecreate', function(e){
-	$("#Bild9").click(function(e) {
+	$("#9").click(function(e) {
 		$.mobile.changePage('#09b', 'slidedown');
 	});
 });
 
 
 $('body #indexa').live('pagecreate', function(e){
-	$("#Bild10").click(function(e) {
+	$("#10").click(function(e) {
 		$.mobile.changePage('#10a', 'slidedown');
 	});
 });
 
 
 $('body #indexa').live('pagecreate', function(e){
-	$("#Bild11").click(function(e) {
+	$("#11").click(function(e) {
 		$.mobile.changePage('#11a', 'slidedown');
 	});
 });
 
 
 $('body #indexa').live('pagecreate', function(e){
-	$("#Bild12").click(function(e) {
+	$("#12").click(function(e) {
 		$.mobile.changePage('#12a', 'slidedown');
 	});
 });
 
 
 $('body #indexa').live('pagecreate', function(e){
-	$("#Bild13").click(function(e) {
+	$("#13").click(function(e) {
 		$.mobile.changePage('#13a', 'slidedown');
 	});
 });
 
 
 $('body #indexa').live('pagecreate', function(e){
-	$("#Bild14").click(function(e) {
+	$("#14").click(function(e) {
 		$.mobile.changePage('#14a', 'slidedown');
 	});
 });
 
 
 $('body #indexa').live('pagecreate', function(e){
-	$("#Bild15").click(function(e) {
+	$("#15").click(function(e) {
 		$.mobile.changePage('#15a', 'slidedown');
 	});
 });
 
 
 $('body #indexa').live('pagecreate', function(e){
-	$("#Bild16").click(function(e) {
+	$("#16").click(function(e) {
 		$.mobile.changePage('#16a', 'slidedown');
 	});
 });
 
 
 $('body #indexa').live('pagecreate', function(e){
-	$("#Bild17").click(function(e) {
+	$("#17").click(function(e) {
 		$.mobile.changePage('#17a', 'slidedown');
 	});
 });
 
 
 $('body #indexa').live('pagecreate', function(e){
-	$("#Bild18").click(function(e) {
+	$("#18").click(function(e) {
 		$.mobile.changePage('#18a', 'slidedown');
 	});
 });
 
 
 $('body #indexa').live('pagecreate', function(e){
-	$("#Bild19").click(function(e) {
+	$("#19").click(function(e) {
 		$.mobile.changePage('#19a', 'slidedown');
 	});
 });
 
 
 $('body #indexa').live('pagecreate', function(e){
-	$("#Bild20").click(function(e) {
+	$("#20").click(function(e) {
 		$.mobile.changePage('#20a', 'slidedown');
 	});
 });
 
 
 $('body #indexa').live('pagecreate', function(e){
-	$("#Bild21").click(function(e) {
+	$("#21").click(function(e) {
 		$.mobile.changePage('#21a', 'slidedown');
 	});
 });
 
 
 $('body #indexa').live('pagecreate', function(e){
-	$("#Bild22").click(function(e) {
+	$("#22").click(function(e) {
 		$.mobile.changePage('#22a', 'slidedown');
 	});
 });
 
 
 $('body #indexa').live('pagecreate', function(e){
-	$("#Bild23").click(function(e) {
+	$("#23").click(function(e) {
 		$.mobile.changePage('#23a', 'slidedown');
 	});
 });
 
 
 $('body #indexa').live('pagecreate', function(e){
-	$("#Bild24").click(function(e) {
+	$("#24").click(function(e) {
 		$.mobile.changePage('#24a', 'slidedown');
 	});
 });
