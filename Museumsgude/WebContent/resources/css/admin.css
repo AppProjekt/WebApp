@@ -5,26 +5,16 @@
   height: 85%;
 }
 
-.Bildinfo input {
+.Bildinfo textarea {
+	position: relative;
   float: right;
-  max-width: 40%;
-  -webkit-transform: translateY(-50%);
+  width: 40%;
+  height: 85%;
+	top: -100px;
 }
 
 .Bildinfo h3 {
  -webkit-transform: translateY(150%);
-}
-
-@mixin vertical-align {
-  position: relative;
-  top: 50%;
-  	-webkit-transform: translateY(-50%);
-  	-ms-transform: translateY(-50%);
-  	transform: translateY(-50%);
-}
-
-.mixin input{
-  @include vertical-align;
 }
 
 .dotted
@@ -61,11 +51,11 @@ section {
   max-width: 90%;
   background: #433669;
   margin: 0 auto 1em;
-  height: 30%;
+  height: 200px;
   border-radius: .5em;
   color: white;
 }
-  img, input {
+  img, textarea {
   padding: 1em;
   }
   

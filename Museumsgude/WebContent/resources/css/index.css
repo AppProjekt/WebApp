@@ -28,7 +28,7 @@ body .indexpage .indexheader #aktiv {
 	color: white;
 }
 
-body .indexpage .indexheader .linksbündig {
+body .indexpage .indexheader .linksbuendig {
 	float: left;
 }
 
@@ -37,7 +37,7 @@ body .indexpage .indexheader span {
 	margin: 1px 5px 1px 5px;
 }
 
-body .indexpage .indexheader .rechtsbündig {
+body .indexpage .indexheader .rechtsbuendig {
 	float: right;
 }
 
@@ -99,17 +99,19 @@ body .bildc .bildheader {
 	display: inline-block;
 	margin: 1px 5px 1px 5px;
 }
-.bildheader .linksbündig {
+.bildheader .linksbuendig {
 	float: left;
 }
 
-.bildheader .rechtsbündig {
+.bildheader .rechtsbuendig {
 	float: right;
 }
-.bildheader .zurübersicht {
+.bildheader .zuruebersicht {
 	background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0,#555),color-stop(1,#333));
+	background-color: #444;
 	padding: 10px 20px 10px 20px;
 	font-size: 16px;
+	cursor: pointer;
 }
 /*===content===*/
 
@@ -171,15 +173,18 @@ body div .bildcontent_text {
 	font-family: Calibri;
 	text-shadow: 0 0 0;
 	text-align: center; */
-	max-width: 50%;
+	max-width: 60%;
 	max-height: 100%;
 	list-style: none;
 	margin: 70px auto;/*abstand oben*/
-	padding: 0;
+	padding: 10px;
 	color: #eee;
 	background-color: #bbb;
+	line-height: 1.4em;
 }
-
+body div .bildcontent_text p.speicher {
+	display: none;
+}
 body .bildb .bildcontent_text #p iframe {
 	/*text-align: left;
 	overflow: scroll !important;

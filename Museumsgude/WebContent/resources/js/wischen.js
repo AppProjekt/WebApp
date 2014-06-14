@@ -27,73 +27,60 @@ $('body #indexc').live("swipeleft", function(){
 
 /*Ende Index*/
 
-
 /* ===================
 	Anfang Bilder
  		======================*/
-/*Bild 1*/
+
 /*==Auf Seite A==*/
 
-$('body #01a').live("swipeleft", function(){
-        var nextpage = $("#01b");
+$(".bilda").live("swipeleft", function(){
+	var Hash = window.location.hash;
+	var wischBildnr = Hash.substring(1, 3);
+	var B = "#" + wischBildnr + "b";
+        var nextpage = $(B);
         $.mobile.changePage(nextpage, 'slide');
       });
 
-$('body #01a').live("swiperight", function(){
-       var prevpage = $("#01c");
+$(".bilda").live("swiperight", function(){
+	var Hash = window.location.hash;
+	var wischBildnr = Hash.substring(1, 3);
+	var C = "#" + wischBildnr + "c";
+       var prevpage = $(C);
         $.mobile.changePage(prevpage, 'slide', true);
       });
 
 /*==Auf Seite B==*/
 
-$('body #01b').live("swiperight", function(){
-       var prevpage = $("#01a");
+$(".bildb").live("swiperight", function(){
+	var Hash = window.location.hash;
+	var Bildnr = Hash.substring(1, 3);
+	var A = "#" + Bildnr + "a";
+       var prevpage = $(A);
         $.mobile.changePage(prevpage, 'slide', true);
       });
 
 /*==Auf Seite C==*/
 
-$('body #01c').live("swipeleft", function(){
-        var nextpage = $("#01a");
+$(".bildc").live("swipeleft", function(){
+	var Hash = window.location.hash;
+	var Bildnr = Hash.substring(1, 3);
+	var A = "#" + Bildnr + "a";
+	var B = "#" + Bildnr + "b";
+	var C = "#" + Bildnr + "c";
+        var nextpage = $(A);
         $.mobile.changePage(nextpage, 'slide');
       });
 
-/*Bild 2*/
-/*==Auf Seite A==*/
-
-$('body #02a').live("swipeleft", function(){
-        var nextpage = $("#02b");
-        $.mobile.changePage(nextpage, 'slide');
-      });
-
-$('body #02a').live("swiperight", function(){
-       var prevpage = $("#02c");
-        $.mobile.changePage(prevpage, 'slide', true);
-      });
-
-/*==Auf Seite B==*/
-
-$('body #02b').live("swiperight", function(){
-       var prevpage = $("#02a");
-        $.mobile.changePage(prevpage, 'slide', true);
-      });
-
-/*==Auf Seite C==*/
-
-$('body #02c').live("swipeleft", function(){
-        var nextpage = $("#02a");
-        $.mobile.changePage(nextpage, 'slide');
-      });
 /*=========================*/
 
 $('.bilda').live('pagecreate', function(e){
-	$(".zurübersicht").click(function(e) {
+	$(".zuruebersicht").click(function(e) {
 		$.mobile.changePage('#indexa', 'slideup');
 	});
 });
 /*=========================*/
 
-$('body #indexa').live('pagecreate', function(e){
+$("body #indexa").live('pagecreate', function(e){
 	$("#1").click(function(e) {
 		$.mobile.changePage('#01a', 'slidedown');
 	});
