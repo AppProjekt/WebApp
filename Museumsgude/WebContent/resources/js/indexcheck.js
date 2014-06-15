@@ -1,11 +1,3 @@
-$(function () {
-	
-
-for(var i=1;i<50;i++) {
-Bilderror(i);
-	
-}
-});
 
 function Bilderror(i) {
 	var errorabfrage = "#" + i + " a img";
@@ -14,3 +6,11 @@ function Bilderror(i) {
 		$("#" + i).css({display: "none"});
 	});
 }
+$(function () {
+	
+
+for(var i=1;i<50;i++) {
+Bilderror(i);
+	
+}
+});
