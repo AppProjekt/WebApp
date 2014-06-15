@@ -65,8 +65,7 @@ $(".bildc").live("swipeleft", function(){
 	var Hash = window.location.hash;
 	var Bildnr = Hash.substring(1, 3);
 	var A = "#" + Bildnr + "a";
-	var B = "#" + Bildnr + "b";
-	var C = "#" + Bildnr + "c";
+	
         var nextpage = $(A);
         $.mobile.changePage(nextpage, 'slide');
       });

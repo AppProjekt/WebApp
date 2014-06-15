@@ -1,9 +1,20 @@
+ <html>
+ <head>
  	<link rel="stylesheet" href="resources/css/jquery.mobile-1.0a3.min.css" />
 	<link rel="stylesheet" href="resources/css/admin.css"/>
 	<script src="resources/js/jquery-1.7.2.min.js"></script>
 	<script src="resources/js/jquery.mobile-1.0a3.min.js"></script>
-    
 
+</head>
+<form action="<?php echo $_SERVER['PHP_SELF'] ?>" method="POST" enctype="multipart/form-data">
+<textarea name="text" rows="10" cols="80"><?php echo $_POST['text'] ?></textarea><br>
+<input type="submit" name="submit" value="aktualisieren">
+</form>
+<?php
+}
+?> 
+
+<body>
 <h1>Administrationsbereich</h1>
 
 <section class="Bildinfo">
@@ -31,3 +42,5 @@
 </section> 
 
 <script type="text/javascript" src="resources/js/admin.js"></script>
+</body>
+</html>
