@@ -47,6 +47,7 @@ $(".bilda").live("swiperight", function(){
 	var C = "#" + wischBildnr + "c";
        var prevpage = $(C);
         $.mobile.changePage(prevpage, 'slide', true);
+        $("#ggb01").load("resources/ggb/riley_animation_1.html");
       });
 
 /*==Auf Seite B==*/
