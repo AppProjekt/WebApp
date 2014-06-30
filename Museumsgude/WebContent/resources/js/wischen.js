@@ -47,7 +47,7 @@ $(".bilda").live("swiperight", function(){
 	var C = "#" + wischBildnr + "c";
        var prevpage = $(C);
         $.mobile.changePage(prevpage, 'slide', true);
-        $("#ggb01").load("resources/ggb/riley_animation_1.html");
+        $("#ggb01").load("resources/ggb/animation_alt.html");
       });
 
 /*==Auf Seite B==*/
@@ -66,7 +66,7 @@ $(".bildc").live("swipeleft", function(){
 	var Hash = window.location.hash;
 	var Bildnr = Hash.substring(1, 3);
 	var A = "#" + Bildnr + "a";
-	
+
         var nextpage = $(A);
         $.mobile.changePage(nextpage, 'slide');
       });
