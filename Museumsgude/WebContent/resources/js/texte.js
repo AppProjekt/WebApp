@@ -5,6 +5,8 @@ function Text ()  {
 		  var Quelle = "resources/texte/" + Bildnr + ".txt";
 		  var Ziel = ".bildcontent_text p#text" + Bildnr;
 		  var Speicher = ".bildcontent_text p#speicher" + Bildnr;
+		  var Audio = "#audio" + Bildnr;
+		  var AudioQuelle = "resources/texte/audio" + Bildnr + ".mp3";
 			    
 			    $(Speicher).load(Quelle, function(msg)  {
 			       	var myArray = msg.split("\n");
@@ -16,6 +18,7 @@ function Text ()  {
 				    $(Ziel).html(Bildtext);
 			    });
 			   
+			  $(Audio).html("<source src='" + AudioQuelle + "' type='audio/mpeg'>");
 			  }
 
 $("li").click(function() {
