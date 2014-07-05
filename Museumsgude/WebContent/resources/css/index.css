@@ -203,7 +203,7 @@ body .bildb .bildcontent_text #p iframe {
 
 @media screen and (min-width: 960px) { /*tablet breit, leptop*/
 	body .bilda .bildcontent {
-		max-width: 23%;
+		max-width: 25%;
 		margin: 70px auto;
 		
 	}
@@ -274,7 +274,7 @@ body #footer {
 	width: 100%;
 	height: 114px;
 	color: white;
-	background-color: #565656;
+	background: transparent;
 	font-weight: normal;
 	font-size: 15px;
 	font-family: Calibri;

@@ -1,8 +1,9 @@
 
     $(function() { 
-    	var BildnrInBug = "in";
+    	var BildnrInBug = "";
 		  var Hash = window.location.hash;
-		  var Bildnr = Hash.substring(1, 3);
+		//  var Bildnr = Hash.substring(1, 3);
+		  var Bildnr = Hash.replace(/\D+/g,"");
 		  if (Bildnr == BildnrInBug) {
 			  $("#jquery_jplayer_1").jPlayer({
 			         ready: function () {
@@ -33,6 +34,8 @@
         supplied: "mp3",
         
       });
+       $("#playerimg").attr("src", "resources/images/" + Bildnr + ".png");
+	   
 	}
 });
 
@@ -43,9 +46,10 @@
 	
 	
 	$( "#TrackwahlPlay" ).click(function() {
-	var BildnrInBug = "in";
+	var BildnrInBug = "";
 		  var Hash = window.location.hash;
-		  var Bildnr = Hash.substring(1, 3);
+		//  var Bildnr = Hash.substring(1, 3);
+		  var Bildnr = Hash.replace(/\D+/g,"");
 		  if (Bildnr == BildnrInBug) {
 			  $("#jquery_jplayer_1").jPlayer("play");
 		  } else {
@@ -71,6 +75,7 @@
 				        supplied: "mp3",
 				        
 				      });
+				 $("#playerimg").attr("src", "resources/images/" + Bildnr + ".png");
 				    });
 				 window.setTimeout("Play ()", 1000);
 					}

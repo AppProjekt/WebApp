@@ -6,8 +6,8 @@
   
   
   
-   	  <script src="resources/js/jquery-1.7.2.min.js"></script> 
-    <!-- <script src="http://code.jquery.com/jquery-1.7.2.min.js"></script> -->
+   	<!--   <script src="resources/js/jquery-1.7.2.min.js"></script> -->
+    <script src="http://code.jquery.com/jquery-1.7.2.min.js"></script> 
    <!-- <script src="http://code.jquery.com/mobile/1.0a3/jquery.mobile-1.0a3.min.js"></script> -->
     <script src="resources/js/jquery.mobile-1.0a3.min.js"></script>
     
@@ -95,8 +95,7 @@
  <!-- Bilder -->
  
  <!-- Bild 1 -->
- 
- <div class="bilda" data-role="page" id="01a"> 
+ <div class="bilda" data-role="page" id="1a"> 
     	<div class="bildheader"><span class="linksbuendig">| Animation |</span><span class="zuruebersicht" id="aktiv" >| Zur Übersicht |</span><span class="rechtsbuendig">| Infotext |</span></div> 
     	<div class="bildcontent">
     		<img src="resources/images/1.png">
@@ -105,29 +104,31 @@
       	
     </div>
  
- <div class="bildb" data-role="page" id="01b"> 
+ <div class="bildb" data-role="page" id="1b"> 
     	<div class="bildheader"><span class="linksbuendig">| Bild |</span><span >| Infotext |</span><span id="aktiv" class="rechtsbuendig">| ??? |</span></div> 
      <div class="bildcontent_text">
-     <p class="speicher" id="speicher01"></p>
-     <audio controls id="audio1">
-  
+     <p class="speicher" id="speicher1"></p>
+     <audio class="textaudio" controls>
+     <source src="resources/texte/audio/2.mp3" type='audio/mpeg'>
 Your browser does not support the audio element.
 </audio>
- 		<p id="text01"></p>
-        </div>      
+ 		<p id="text1"></p>
+        </div>  
+        
 </div>
 
-<div class="bildc" data-role="page" id="01c"> 
+<div class="bildc" data-role="page" id="1c"> 
     	<div class="bildheader"><span id="aktiv" class="linksbuendig">| ??? |</span><span >| Animation |</span><span class="rechtsbuendig">| Bild |</span></div> 
     	<br/>
     	<input type="button" value="startseite" onclick="location.href = 'index.html';" />
-    	<div class="bildcontent" id="ggb01">
+    	<div class="bildcontent" id="ggb1">
        </div>
+      
     </div> 
  
  <!-- Bild 2 -->
  
- <div class="bilda" data-role="page" id="02a"> 
+ <div class="bilda" data-role="page" id="2a"> 
     	<div class="bildheader"><span class="linksbuendig">| Animation |</span><span id="aktiv" class="zuruebersicht">| Zur Übersicht |</span><span class="rechtsbuendig">| Infotext |</span></div> 
     	<div class="bildcontent">
     		<img src="resources/images/2.png">
@@ -136,47 +137,54 @@ Your browser does not support the audio element.
       	
     </div>
  
- <div class="bildb" data-role="page" id="02b"> 
+ <div class="bildb" data-role="page" id="2b"> 
     	<div class="bildheader"><span class="linksbuendig">| Bild |</span><span >| Infotext |</span><span id="aktiv" class="rechtsbuendig">| ??? |</span></div> 
     	<div class="bildcontent_text">
-    	<p class="speicher" id="speicher02"></p>
-    	<p id="text02"></p>    	 
+    	<p class="speicher" id="speicher2"></p>
+    	<audio class="textaudio" controls >
+  <source src="resources/texte/audio/2.mp3" type='audio/mpeg'>
+Your browser does not support the audio element.
+</audio>
+    	<p id="text2"></p>   
+    	 	 
         </div>
       
     </div>
 
-<div class="bildc" data-role="page" id="02c"> 
+<div class="bildc" data-role="page" id="2c"> 
     	<div class="bildheader"><span id="aktiv" class="linksbuendig">| ??? |</span><span>| Animation |</span><span class="rechtsbuendig">| Bild |</span></div> 
     	<div class="bildcontent">
     			Animation
        </div>
+       
     </div> 
     
  <!-- Bild 3 -->
  
- <div class="bilda" data-role="page" id="03a"> 
+ <div class="bilda" data-role="page" id="3a"> 
     	<div class="bildheader"><span class="linksbuendig">| Animation |</span><span id="aktiv" class="zuruebersicht">| Zur Übersicht |</span><span class="rechtsbuendig">| Infotext |</span></div> 
     	<div class="bildcontent">
-    		<img src="resources/images/03.png">
+    		<img src="resources/images/3.png">
     	</div>
     	
       	
     </div>
  
- <div class="bildb" data-role="page" id="03b"> 
+ <div class="bildb" data-role="page" id="3b"> 
     	<div class="bildheader"><span class="linksbuendig">| Bild |</span><span >| Infotext |</span><span id="aktiv" class="rechtsbuendig">| ??? |</span></div> 
     	<div class="bildcontent_text">
-    	<p class="speicher" id="speicher03"></p>
-    	<p id="text03"></p>    	 
+    	<p class="speicher" id="speicher3"></p>
+    	<p id="text3"></p>    	 
         </div>
-      
+     
     </div>
 
-<div class="bildc" data-role="page" id="03c"> 
+<div class="bildc" data-role="page" id="3c"> 
     	<div class="bildheader"><span id="aktiv" class="linksbuendig">| ??? |</span><span>| Animation |</span><span class="rechtsbuendig">| Bild |</span></div> 
     	<div class="bildcontent">
     			Animation
        </div>
+       
     </div> 
  
  
@@ -184,6 +192,8 @@ Your browser does not support the audio element.
  
  
 <div id="footer">
+<img id="playerimg" style="position: fixed; left: 0; bottom: 0; width: 200px;" src="">
+ 
       	<div id="jquery_jplayer_1" class="jp-jplayer"></div>
   <div id="jp_container_1" class="jp-audio">
     <div class="jp-type-single">

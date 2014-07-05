@@ -28,9 +28,10 @@ div.jp-video {
 	color: #666;
 	border:1px solid #009be3;
 	background-color:#eee;
+	margin-left: 200px;
 }
 div.jp-audio {
-	width:380px;
+	width:100%;
 }
 div.jp-audio-stream {
 	width:182px;
