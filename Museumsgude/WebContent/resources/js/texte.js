@@ -5,7 +5,7 @@ function Text ()  {
 		  var Quelle = "resources/texte/" + Bildnr + ".txt";
 		  var Ziel = ".bildcontent_text p#text" + Bildnr;
 		  var Speicher = ".bildcontent_text p#speicher" + Bildnr;
-		    
+			    
 			    $(Speicher).load(Quelle, function(msg)  {
 			       	var myArray = msg.split("\n");
 					var Bildtext = "";
@@ -15,7 +15,7 @@ function Text ()  {
 			        }
 				    $(Ziel).html(Bildtext);
 			    });
-			
+}
 
 $("li").click(function() {
 	window.setTimeout("Text ()", 1000);

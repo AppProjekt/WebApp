@@ -203,7 +203,7 @@ body .bildb .bildcontent_text #p iframe {
 
 @media screen and (min-width: 960px) { /*tablet breit, leptop*/
 	body .bilda .bildcontent {
-		max-width: 25%;
+		max-width: 35%;
 		margin: 70px auto;
 		
 	}
@@ -211,7 +211,7 @@ body .bildb .bildcontent_text #p iframe {
 
 @media screen and (max-width: 960px) { /*tablet hoch, handy breit*/
 	body .bilda .bildcontent {
-		max-width: 50%;
+		max-width: 70%;
 		margin: 190px auto;
 		
 	}
@@ -224,7 +224,7 @@ body .bildb .bildcontent_text #p iframe {
 }
 @media screen and (max-width: 320px) { /*handy hoch*/
 	body .bilda .bildcontent {
-		max-width: 90%;
+		max-width: 80%;
 		margin: 70px auto;
 		
 	}
@@ -301,3 +301,8 @@ body .page .footer_start {
 	z-index: 10;
 }
 	*/
+	
+	body .bildcontent_text #text01 {
+	height: 100%;
+	color: white;
+	}

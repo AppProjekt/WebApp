@@ -1,7 +1,7 @@
 /*Anfang Index*/
 /*==Auf Seite A==*/
 
-$('body #indexa').live("swipeleft", function(){
+/*$('body #indexa').live("swipeleft", function(){
         var nextpage = $("#indexb");
         $.mobile.changePage(nextpage, 'slide');
       });
@@ -9,21 +9,21 @@ $('body #indexa').live("swipeleft", function(){
 $('body #indexa').live("swiperight", function(){
        var prevpage = $("#indexc");
         $.mobile.changePage(prevpage, 'slide', true);
-      });
+      });*/
 
 /*==Auf Seite B==*/
 
-$('body #indexb').live("swiperight", function(){
+/*$('body #indexb').live("swiperight", function(){
        var prevpage = $("#indexa");
         $.mobile.changePage(prevpage, 'slide', true);
-      });
+      });*/
 
 /*==Auf Seite C==*/
 
-$('body #indexc').live("swipeleft", function(){
+/*$('body #indexc').live("swipeleft", function(){
         var nextpage = $("#indexa");
         $.mobile.changePage(nextpage, 'slide');
-      });
+      });*/
 
 /*Ende Index*/
 
@@ -47,14 +47,14 @@ $(".bilda").live("swiperight", function(){
 	var C = "#" + wischBildnr + "c";
        var prevpage = $(C);
         $.mobile.changePage(prevpage, 'slide', true);
-        $("#ggb01").load("resources/ggb/animation_alt.html");
+        $("#ggb01").load("resources/animationVideo/animation_alt.html");
       });
 
 /*==Auf Seite B==*/
 
 $(".bildb").live("swiperight", function(){
 	var Hash = window.location.hash;
-	var wischBildnr = Hash.replace(/\D+/g,"");;
+	var wischBildnr = Hash.replace(/\D+/g,"");
 	var A = "#" + wischBildnr + "a";
        var prevpage = $(A);
         $.mobile.changePage(prevpage, 'slide', true);
@@ -69,6 +69,10 @@ $(".bildc").live("swipeleft", function(){
 
         var nextpage = $(A);
         $.mobile.changePage(nextpage, 'slide');
+        $.each($('audio.textaudio'), function () {
+        	 this.pause();
+        	 this.currentTime = 0;
+        	 });
       });
 
 /*=========================*/
@@ -76,72 +80,68 @@ $(".bildc").live("swipeleft", function(){
 $('.bilda').live('pagecreate', function(e){
 	$(".zuruebersicht").click(function(e) {
 		$.mobile.changePage('#indexa', 'slideup');
-		$.each($('audio.textaudio'), function () {
-		    this.pause();
-		    this.currentTime = 0;
-		});
 	});
 });
 /*=========================*/
 
 $("body #indexa").live('pagecreate', function(e){
 	$("#1").click(function(e) {
-		$.mobile.changePage('#1a', 'slidedown');
+		$.mobile.changePage('#01a', 'slidedown');
 	});
 });
 
 $('body #indexa').live('pagecreate', function(e){
 	$("#2").click(function(e) {
-		$.mobile.changePage('#2a', 'slidedown');
+		$.mobile.changePage('#02a', 'slidedown');
 	});
 });
 
 
 $('body #indexa').live('pagecreate', function(e){
 	$("#3").click(function(e) {
-		$.mobile.changePage('#3a', 'slidedown');
+		$.mobile.changePage('#03a', 'slidedown');
 	});
 });
 
 
 $('body #indexa').live('pagecreate', function(e){
 	$("#4").click(function(e) {
-		$.mobile.changePage('#4a', 'slidedown');
+		$.mobile.changePage('#04a', 'slidedown');
 	});
 });
 
 
 $('body #indexa').live('pagecreate', function(e){
 	$("#5").click(function(e) {
-		$.mobile.changePage('#5a', 'slidedown');
+		$.mobile.changePage('#05a', 'slidedown');
 	});
 });
 
 
 $('body #indexa').live('pagecreate', function(e){
 	$("#6").click(function(e) {
-		$.mobile.changePage('#6a', 'slidedown');
+		$.mobile.changePage('#06a', 'slidedown');
 	});
 });
 
 
 $('body #indexa').live('pagecreate', function(e){
 	$("#7").click(function(e) {
-		$.mobile.changePage('#7a', 'slidedown');
+		$.mobile.changePage('#07b', 'slidedown');
 	});
 });
 
 
 $('body #indexa').live('pagecreate', function(e){
 	$("#8").click(function(e) {
-		$.mobile.changePage('#8a', 'slidedown');
+		$.mobile.changePage('#08b', 'slidedown');
 	});
 });
 
 
 $('body #indexa').live('pagecreate', function(e){
 	$("#9").click(function(e) {
-		$.mobile.changePage('#9a', 'slidedown');
+		$.mobile.changePage('#09b', 'slidedown');
 	});
 });
 
