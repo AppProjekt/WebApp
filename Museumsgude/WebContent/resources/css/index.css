@@ -61,7 +61,6 @@ body .indexpage .indexcontent {
 }
 
 /*Ende Index*/
-
 /*==================
 	Anfang Bilder
 		====================*/
@@ -91,14 +90,17 @@ body .bildc .bildheader {
 	
 	z-index: 20;
 }
+
 .bildheader #aktiv {
 	font-weight: bold;
 	color: white;
 }
+
 .bildheader span {
 	display: inline-block;
 	margin: 1px 5px 1px 5px;
 }
+
 .bildheader .linksbuendig {
 	float: left;
 }
@@ -106,6 +108,7 @@ body .bildc .bildheader {
 .bildheader .rechtsbuendig {
 	float: right;
 }
+
 .bildheader .zuruebersicht {
 	background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0,#555),color-stop(1,#333));
 	background-color: #444;
@@ -113,8 +116,8 @@ body .bildc .bildheader {
 	font-size: 16px;
 	cursor: pointer;
 }
-/*===content===*/
 
+/*===content===*/
 /*===content Bild===*/
 
 body div .bildcontent {
@@ -182,9 +185,11 @@ body div .bildcontent_text {
 	background-color: #bbb;
 	line-height: 1.4em;
 }
+
 body div .bildcontent_text p.speicher {
 	display: none;
 }
+
 body .bildb .bildcontent_text #p iframe {
 	/*text-align: left;
 	overflow: scroll !important;
@@ -201,64 +206,56 @@ body .bildb .bildcontent_text #p iframe {
 	Breiteanpassung ein Bild
 		======================*/
 
-@media screen and (min-width: 960px) { /*tablet breit, leptop*/
+@media screen and (min-width: 960px) {
 	body .bilda .bildcontent {
-		max-width: 35%;
-		margin: 70px auto;
-		
+		max-width: 30%;
+		margin: 70px auto;		
 	}
 }
 
-@media screen and (max-width: 960px) { /*tablet hoch, handy breit*/
+@media screen and (max-width: 960px) {
 	body .bilda .bildcontent {
 		max-width: 70%;
-		margin: 190px auto;
-		
+		margin: 190px auto;		
 	}
 }
 @media screen and (max-width: 480px) {
 	body .bilda .bildcontent {
-		max-width: 50%;
-		
+		max-width: 50%;		
 	}
 }
-@media screen and (max-width: 320px) { /*handy hoch*/
+@media screen and (max-width: 320px) {
 	body .bilda .bildcontent {
-		max-width: 80%;
-		margin: 70px auto;
-		
+		max-width: 65%;
+		margin: 70px auto;		
 	}
 }
 
 /*======================
 	Breiteanpassung Text zum Bild
 		======================*/
-@media screen and (min-width: 960px) { /*tablet breit, leptop*/
+@media screen and (min-width: 960px) { 
 	body .bildb .bildcontent_text {
 		max-width: 70%;
-		margin: 70px auto;
-		
+		margin: 70px auto;		
 	}
 }
 
-@media screen and (max-width: 960px) { /*tablet hoch, handy breit*/
+@media screen and (max-width: 960px) {
 	body .bildb .bildcontent_text {
 		max-width: 70%;
-		margin: 40px auto;
-		
+		margin: 40px auto;		
 	}
 }
 @media screen and (max-width: 480px) {
 	body .bildb .bildcontent_text {
-		max-width: 50%;
-		
+		max-width: 50%;		
 	}
 }
-@media screen and (max-width: 320px) { /*handy hoch*/
+@media screen and (max-width: 320px) {
 	body .bildb .bildcontent_text {
 		max-width: 90%;
-		margin: 70px auto;
-		
+		margin: 70px auto;		
 	}
 }
 
@@ -283,6 +280,7 @@ body #footer {
 	margin: 0 0 0 0;
 	z-index: 10;
 }
+
 /*
 body .page .footer_start {
 	position: fixed;

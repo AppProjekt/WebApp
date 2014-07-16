@@ -75,14 +75,14 @@ $(".bildc").live("swipeleft", function(){
         	 });
       });
 
-/*=========================*/
+/*==Zur Startseite==*/
 
 $('.bilda').live('pagecreate', function(e){
 	$(".zuruebersicht").click(function(e) {
 		$.mobile.changePage('#indexa', 'slideup');
 	});
 });
-/*=========================*/
+/*==Bilder==*/
 
 $("body #indexa").live('pagecreate', function(e){
 	$("#1").click(function(e) {
@@ -96,13 +96,11 @@ $('body #indexa').live('pagecreate', function(e){
 	});
 });
 
-
 $('body #indexa').live('pagecreate', function(e){
 	$("#3").click(function(e) {
 		$.mobile.changePage('#03a', 'slidedown');
 	});
 });
-
 
 $('body #indexa').live('pagecreate', function(e){
 	$("#4").click(function(e) {
@@ -110,13 +108,11 @@ $('body #indexa').live('pagecreate', function(e){
 	});
 });
 
-
 $('body #indexa').live('pagecreate', function(e){
 	$("#5").click(function(e) {
 		$.mobile.changePage('#05a', 'slidedown');
 	});
 });
-
 
 $('body #indexa').live('pagecreate', function(e){
 	$("#6").click(function(e) {
@@ -124,27 +120,23 @@ $('body #indexa').live('pagecreate', function(e){
 	});
 });
 
-
 $('body #indexa').live('pagecreate', function(e){
 	$("#7").click(function(e) {
-		$.mobile.changePage('#07b', 'slidedown');
+		$.mobile.changePage('#07a', 'slidedown');
 	});
 });
-
 
 $('body #indexa').live('pagecreate', function(e){
 	$("#8").click(function(e) {
-		$.mobile.changePage('#08b', 'slidedown');
+		$.mobile.changePage('#08a', 'slidedown');
 	});
 });
-
 
 $('body #indexa').live('pagecreate', function(e){
 	$("#9").click(function(e) {
-		$.mobile.changePage('#09b', 'slidedown');
+		$.mobile.changePage('#09a', 'slidedown');
 	});
 });
-
 
 $('body #indexa').live('pagecreate', function(e){
 	$("#10").click(function(e) {
@@ -152,13 +144,11 @@ $('body #indexa').live('pagecreate', function(e){
 	});
 });
 
-
 $('body #indexa').live('pagecreate', function(e){
 	$("#11").click(function(e) {
 		$.mobile.changePage('#11a', 'slidedown');
 	});
 });
-
 
 $('body #indexa').live('pagecreate', function(e){
 	$("#12").click(function(e) {
@@ -166,13 +156,11 @@ $('body #indexa').live('pagecreate', function(e){
 	});
 });
 
-
 $('body #indexa').live('pagecreate', function(e){
 	$("#13").click(function(e) {
 		$.mobile.changePage('#13a', 'slidedown');
 	});
 });
-
 
 $('body #indexa').live('pagecreate', function(e){
 	$("#14").click(function(e) {
@@ -180,13 +168,11 @@ $('body #indexa').live('pagecreate', function(e){
 	});
 });
 
-
 $('body #indexa').live('pagecreate', function(e){
 	$("#15").click(function(e) {
 		$.mobile.changePage('#15a', 'slidedown');
 	});
 });
-
 
 $('body #indexa').live('pagecreate', function(e){
 	$("#16").click(function(e) {
@@ -194,13 +180,11 @@ $('body #indexa').live('pagecreate', function(e){
 	});
 });
 
-
 $('body #indexa').live('pagecreate', function(e){
 	$("#17").click(function(e) {
 		$.mobile.changePage('#17a', 'slidedown');
 	});
 });
-
 
 $('body #indexa').live('pagecreate', function(e){
 	$("#18").click(function(e) {
@@ -208,13 +192,11 @@ $('body #indexa').live('pagecreate', function(e){
 	});
 });
 
-
 $('body #indexa').live('pagecreate', function(e){
 	$("#19").click(function(e) {
 		$.mobile.changePage('#19a', 'slidedown');
 	});
 });
-
 
 $('body #indexa').live('pagecreate', function(e){
 	$("#20").click(function(e) {
@@ -222,13 +204,11 @@ $('body #indexa').live('pagecreate', function(e){
 	});
 });
 
-
 $('body #indexa').live('pagecreate', function(e){
 	$("#21").click(function(e) {
 		$.mobile.changePage('#21a', 'slidedown');
 	});
 });
-
 
 $('body #indexa').live('pagecreate', function(e){
 	$("#22").click(function(e) {
@@ -236,13 +216,11 @@ $('body #indexa').live('pagecreate', function(e){
 	});
 });
 
-
 $('body #indexa').live('pagecreate', function(e){
 	$("#23").click(function(e) {
 		$.mobile.changePage('#23a', 'slidedown');
 	});
 });
-
 
 $('body #indexa').live('pagecreate', function(e){
 	$("#24").click(function(e) {

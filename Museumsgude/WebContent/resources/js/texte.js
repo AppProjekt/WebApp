@@ -1,6 +1,6 @@
 	
 function Text ()  {
-		var Hash = window.location.hash;
+		  var Hash = window.location.hash;
 		  var Bildnr = Hash.substring(1, 3);
 		  var Quelle = "resources/texte/" + Bildnr + ".txt";
 		  var Ziel = ".bildcontent_text p#text" + Bildnr;
@@ -19,13 +19,14 @@ function Text ()  {
 
 $("li").click(function() {
 	window.setTimeout("Text ()", 1000);
-	});
+});
+
 $(function () {
 	Text ();
 });
 
   	if (window.location.hash == "") {
-  		window.location.hash = "#indexa";
+  		window.location.hash = "";
   	}
 /*
 // The root URL for the RESTful services
