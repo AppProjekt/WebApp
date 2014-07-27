@@ -4,33 +4,32 @@ $(function() {
 		  //  var Bildnr = Hash.substring(1, 3);
 		  var Bildnr = Hash.replace(/\D+/g,"");
 		  if (Bildnr == BildnrInBug) {
-			  $("#jquery_jplayer_1").jPlayer({
-			         ready: function () {
-			         $(this).jPlayer("setMedia", {
-			             title: "Kein Bild ausgewaehlt.",
-			            mp3: " "
-			          });
-
-			        },
-			        swfPath: "/js",
-			        supplied: "mp3",
-
-			      });
+				$("#jquery_jplayer_1").jPlayer({
+						ready: function () {
+							$(this).jPlayer("setMedia", {
+								title: "Kein Bild ausgewaehlt.",
+								m4a: " "
+							});
+						},
+						swfPath: "../../js",
+						supplied: "m4a"
+					});
+				
 		  } else {
     	var Titel = Bildnr;
     	
     	var Quelle = "resources/musikstuecke/" + Bildnr + ".mp3";
-  
+    	alert(Quelle);
     	$("#jquery_jplayer_1").jPlayer({
     	  ready: function () {
           $(this).jPlayer("setMedia", {
              title: "Bild " + Titel,
-            mp3: Quelle
+             m4a: Quelle				
           });
         
         },
         swfPath: "/js",
-        supplied: "mp3",
+        supplied: "m4a"
         
       });
        $("#playerimg").attr("src", "resources/bilder/" + Bildnr + ".png");
@@ -44,7 +43,7 @@ $(function() {
 	}
 
 
-	$( "#TrackwahlPlay" ).click(function() {
+	$("#TrackwahlPlay").click(function() {
 		  var BildnrInBug = "";
 		  var Hash = window.location.hash;
 		  //  var Bildnr = Hash.substring(1, 3);
@@ -67,15 +66,14 @@ $(function() {
 				          ready: function () {
 				          $(this).jPlayer("setMedia", {
 				             title: "Bild " + Titel,
-				             mp3: Quelle
+				             m4a: Quelle
 				          	 });
 
 				          },
 				        swfPath: "/js",
-				        supplied: "mp3",
-
+				        supplied: "m4a"
 				       });
-				       $("#playerimg").attr("src", "resources/bilder/" + Bildnr + ".png");
+				     //  $("#playerimg").attr("src", "resources/bilder/" + Bildnr + ".png");
 				    });
 				 window.setTimeout("Play ()", 1000);
 		   }
