@@ -19,7 +19,6 @@ $(function() {
     	var Titel = Bildnr;
     	
     	var Quelle = "resources/musikstuecke/" + Bildnr + ".mp3";
-    	alert(Quelle);
     	$("#jquery_jplayer_1").jPlayer({
     	  ready: function () {
           $(this).jPlayer("setMedia", {
