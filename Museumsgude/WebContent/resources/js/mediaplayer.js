@@ -3,6 +3,7 @@ $(function() {
 		  var Hash = window.location.hash;
 		  //  var Bildnr = Hash.substring(1, 3);
 		  var Bildnr = Hash.replace(/\D+/g,"");
+		  var plimg = Bildnr.replace(/0/,"");
 		  if (Bildnr == BildnrInBug) {
 				$("#jquery_jplayer_1").jPlayer({
 						ready: function () {
@@ -31,7 +32,8 @@ $(function() {
         supplied: "m4a"
         
       });
-       $("#playerimg").attr("src", "resources/bilder/" + Bildnr + ".png");
+    	
+       $("#playerimg").attr("src", "resources/bilder/" + plimg + ".jpg");
 
 	}
 });
@@ -47,6 +49,7 @@ $(function() {
 		  var Hash = window.location.hash;
 		  //  var Bildnr = Hash.substring(1, 3);
 		  var Bildnr = Hash.replace(/\D+/g,"");
+		  var plimg = Bildnr.replace(/0/,"");
 		  if (Bildnr == BildnrInBug) {
 			  $("#jquery_jplayer_1").jPlayer("play");
 		  } 
@@ -54,7 +57,7 @@ $(function() {
 		  var Titel = $("#jp_container_1 div div.jp-details ul li span").html();
 		  if ("Bild " + Bildnr != Titel) {
 			  var Titel = Bildnr;
-
+			  
 			  var Quelle = "resources/musikstuecke/" + Bildnr + ".mp3";
 
 
@@ -72,7 +75,7 @@ $(function() {
 				        swfPath: "/js",
 				        supplied: "m4a"
 				       });
-				     //  $("#playerimg").attr("src", "resources/bilder/" + Bildnr + ".png");
+				      $("#playerimg").attr("src", "resources/bilder/" + plimg + ".jpg");
 				    });
 				 window.setTimeout("Play ()", 1000);
 		   }
