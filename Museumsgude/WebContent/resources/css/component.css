@@ -1,21 +1,24 @@
 .grid {
-	max-width: 98%;
+	max-width: 100%;
 	list-style: none;
-	margin: 100px auto;/*otstyp scerhy*/
+	/*margin: 100px auto;*/
 	padding: 0;
 }
+
 .grid li {
 	display: block;
 	float: left;
-	padding: 7px; /*rastojanie mezhdy kartinkami sboky*/
+	padding: 7px;
 	width: 20%;
 	opacity: 1;
 }
+
 .grid li.shown,
 .no-js .grid li,
 .no-cssanimations .grid li {
 	opacity: 1;
 }
+
 .grid li a,
 .grid li img {
 	outline: none;
@@ -24,23 +27,25 @@
 	max-width: 100%;
 }
 
-@media screen and (min-width: 960px) { /*tablet breit, leptop*/
+@media screen and (min-width: 960px) { 
 	.grid li {
 		width: 20%;
 	}
 }
 
-@media screen and (max-width: 960px) { /*tablet hoch, handy breit*/
+@media screen and (max-width: 960px) { 
 	.grid li {
 		width: 50%;
 	}
 }
+
 @media screen and (max-width: 480px) {
 	.grid li {
 		width: 50%;
 	}
 }
-@media screen and (max-width: 320px) { /*handy hoch*/
+
+@media screen and (max-width: 320px) { 
 	.grid li {
 		width: 100%;
 	}
