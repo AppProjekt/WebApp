@@ -177,14 +177,15 @@ body div .bildcontent_text {
 	font-family: Calibri;
 	text-shadow: 0 0 0;
 	text-align: center; */
-	max-width: 60%;
+	max-width: 80%;
 	max-height: 100%;
 	list-style: none;
 	margin: 70px auto;/*abstand oben*/
-	padding: 10px;
-	color: #eee;
-	background-color: #bbb;
+	padding: 5px 10px;
+	color: #343434;
+	background-color: #fff;
 	line-height: 1.4em;
+	font-family: Calibri;
 }
 
 body div .bildcontent_text p.speicher {
@@ -203,6 +204,23 @@ body .bildb .bildcontent_text #p iframe {
 	max-height: 100%;
 }
 
+body .bildb img.textbild {
+	float: left;
+	width: 15%;
+	margin-top: 75px;
+}
+
+body .bildb .bildcontent_text p.textfeld {
+	margin-top: 5px;
+	color: #343434;
+	font-family: Calibri;
+	font-size: 16px;
+}
+
+body .bildb .bildcontent_text audio.textaudio {
+	margin-top: 5px;
+	float: right;
+}
 /*======================
 	Breiteanpassung ein Bild
 		======================*/
@@ -300,8 +318,3 @@ body .page .footer_start {
 	z-index: 10;
 }
 	*/
-	
-	body .bildcontent_text #text01 {
-	height: 100%;
-	color: white;
-	}
