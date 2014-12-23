@@ -215,6 +215,7 @@ body .bildb .bildcontent_text p.textfeld {
 	color: #343434;
 	font-family: Calibri;
 	font-size: 16px;
+	white-space: normal;
 }
 
 body .bildb .bildcontent_text audio.textaudio {

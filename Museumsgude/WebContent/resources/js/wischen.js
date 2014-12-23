@@ -44,10 +44,12 @@ $(".bilda").live("swipeleft", function(){
 $(".bilda").live("swiperight", function(){
 	var Hash = window.location.hash;
 	var wischBildnr = Hash.replace(/\D+/g,"");
+	var ggbQuelle = "resources/animationVideo/" + wischBildnr + ".html";
 	var C = "#" + wischBildnr + "c";
        var prevpage = $(C);
         $.mobile.changePage(prevpage, 'slide', true);
-        $("#ggb01").load("resources/animationVideo/animation_alt.html");
+        $(".bildcontent_ggb").load(ggbQuelle);
+        /*$("#ggb01").load("resources/animationVideo/animation_alt.html");*/
         /*$("#ggb02").load("resources/animationVideo/Gerstner Karl Fraktal.htm");
         $("#ggb03").load("resources/animationVideo/Max Bill Farbfeld.htm");
         $("#ggb04").load("resources/animationVideo/Gerstner Karl Fraktal.htm");

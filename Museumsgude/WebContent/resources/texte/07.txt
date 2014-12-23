@@ -1,17 +1,15 @@
-﻿<b>Franҫois Morellet (*1926)</b>
-
+﻿<b>Franҫois Morellet</b>
+• *1926
 • Animation zum Malen durch das künstlerisch geprägte Paris
 • Freundschaft mit Maler Almir Mavignier, Kennenlernen der Werke Max Bills -> Inspiration zu ersten geometrischen Werken
 • Kunst nach dem Prinzip des Zufalls
 
 <b>Zufällige Verteilung von 40 000 Quadraten, den geraden und ungeraden Ziffern eines Telefonbuchs folgend</b>
-
 • Bild in 40 000 Quadrate gerastert
 • Sukzessive Übertragung zufällig vorgelesener Telefonnummern auf das Bild
 • Farbliche Unterscheidung von ungeraden und geraden Zahlen (Gelb, Grau)
 
-Komposition
-
+<b>Vertonung</b>
 • 40 000 Quadrate = 40 Töne (Abwechslung von a und c)
 • Eigenes Zufallsprinzip durch Münzwurf (a und c) und Würfeln (Oktave)
 • Übernahme der daraus entstehenden Tonreihenfolge durch Klavier

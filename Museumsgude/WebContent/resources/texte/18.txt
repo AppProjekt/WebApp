@@ -1,16 +1,13 @@
 ﻿<b>Karl Gerstner</b>
-
 • *1930
 • Studium der Typographie, Farbtheoretiker, Grafikdesigner
 • Gründung der Werbeagentur Gerstner + Kutter
 • Visualisierung von Fraktalen (Selbstähnlichkeit, Unendlichkeit im Endlichen)
 
 <b>Coloured Fractal</b>
-
 • Systematisch ineinander geschachtelte Kreise (Selbstähnlichkeit)
 • Angleichung der Farben innerhalb der Kreisgenerationen, Abnahme der Kreisradien zum Bildrand (Unendlichkeit)
 
-Vertonung (von Laila Wolff von Gudenberg)
-
+<b>Vertonung</b>
 • Kürzere Töne und Zunahme der Stimmenvielfalt (Fraktalcharakter)
 • Steigerung zum Höhepunkt synchron abgebaut 
