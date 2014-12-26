@@ -9,23 +9,25 @@ body div.indexpage {
 }
 
 body div.indexpage div.indexheader {
-	position: fixed;
+	position: absolute;
 	top: 0;
 	width: 100%;
-	height: 21px;
-	color: #ccc;
-	background-color: #ededed;
+	height: 31px;
+	color: #333;
+	background: transparent;
+	background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0,#ddd),color-stop(1,#fff));
 	font-weight: normal;
 	font-size: 15px;
 	font-family: Calibri;
 	text-shadow: 0 0 0;
 	text-align: center;
+	
 	z-index: 20;
 }
 
 body .indexpage .indexheader #aktiv {
 	font-weight: bold;
-	color: white;
+	color: #333;
 }
 
 body .indexpage .indexheader .linksbuendig {
@@ -43,21 +45,37 @@ body .indexpage .indexheader .rechtsbuendig {
 
 /*===Index content===*/
 body .indexpage .indexcontent {
-	position: absolute;
-	height: 500px;
-	width: 1000px;
-	top: 50%;
-	left: 50%;
-	margin-top: -260px;
-	margin-left: -500px;	
-	z-index: 5;
-	color: #333;
+	max-width: 80%;
+	max-height: 100%;
+	list-style: none;
+	margin: 50px auto 85px auto;/*abstand oben*/
+	padding: 5px 10px;
+	color: #343434;
 	background-color: #fff;
-	font-weight: normal;
-	font-size: 15px;
+	line-height: 1.4em;
 	font-family: Calibri;
-	text-shadow: 0 0 0;
+}
+body .indexpage .container_new  {
+	margin: 50px auto 85px auto;
+}
+body .indexpage .container_new > ul> li > a > span {
+	display: block;
+	width: inherit;
+	background-repeat: no-repeat;
+	background-position: left top;
+	background-size: 100% 100%;
+}
+body .indexpage .indexcontent #einfuehrung {
+	width: 100%;
+}
+#einfuehrung > tbody > tr > td {
 	text-align: center;
+	vertical-align: center;
+	height: 100px;
+	width: 350px; !important
+}
+#einfuehrung > tbody > tr > td.einftext {
+	background-color: #eee;
 }
 
 /*Ende Index*/
@@ -79,9 +97,9 @@ body .bildc .bildheader {
 	position: absolute;
 	top: 0;
 	width: 100%;
-	height: 41px;
+	height: 31px;
 	color: #333;
-	background-color: #ddd;
+	background: transparent;
 	background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0,#ddd),color-stop(1,#fff));
 	font-weight: normal;
 	font-size: 15px;
@@ -111,10 +129,11 @@ body .bildc .bildheader {
 }
 
 .bildheader .zuruebersicht {
-	background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0,#ccc),color-stop(1,#fff));
-	background-color: #ccc;
+	/*background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0,#ccc),color-stop(1,#fff));
+	background-color: #ccc;/*/
 	padding: 5px 20px 10px 20px;
 	font-size: 16px;
+	font-weight: bold;
 	cursor: pointer;
 }
 
@@ -221,6 +240,7 @@ body .bildb .bildcontent_text p.textfeld {
 body .bildb .bildcontent_text audio.textaudio {
 	margin-top: 5px;
 	float: right;
+	max-width: 50%;
 }
 /*======================
 	Breiteanpassung ein Bild
@@ -286,10 +306,10 @@ body .bildb .bildcontent_text audio.textaudio {
 /*===footer===*/
 body #footer {
 	position: fixed;
-	display: block;
+	display: none;
 	bottom: 0;
 	width: 100%;
-	height: 100px;
+	height: 80px;
 	color: white;
 	background: transparent;
 	font-weight: normal;

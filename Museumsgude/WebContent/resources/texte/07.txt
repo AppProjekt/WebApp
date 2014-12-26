@@ -9,7 +9,7 @@
 • Sukzessive Übertragung zufällig vorgelesener Telefonnummern auf das Bild
 • Farbliche Unterscheidung von ungeraden und geraden Zahlen (Gelb, Grau)
 
-<b>Vertonung</b>
+<b>Vertonung</b> von Phillip Voepel
 • 40 000 Quadrate = 40 Töne (Abwechslung von a und c)
 • Eigenes Zufallsprinzip durch Münzwurf (a und c) und Würfeln (Oktave)
 • Übernahme der daraus entstehenden Tonreihenfolge durch Klavier

@@ -1,7 +1,13 @@
+$(function() {
+	var spanbreite = $('.uebersichtsspan').css('width');
+	$('.uebersichtsspan').css('height', spanbreite);
+	$('.uebersichtsspan').css('background-size', '100% 100%');
+});
+
 /*Anfang Index*/
 /*==Auf Seite A==*/
 
-/*$('body #indexa').live("swipeleft", function(){
+$('body #indexa').live("swipeleft", function(){
         var nextpage = $("#indexb");
         $.mobile.changePage(nextpage, 'slide');
       });
@@ -9,21 +15,21 @@
 $('body #indexa').live("swiperight", function(){
        var prevpage = $("#indexc");
         $.mobile.changePage(prevpage, 'slide', true);
-      });*/
+      });
 
 /*==Auf Seite B==*/
 
-/*$('body #indexb').live("swiperight", function(){
+$('body #indexb').live("swiperight", function(){
        var prevpage = $("#indexa");
         $.mobile.changePage(prevpage, 'slide', true);
-      });*/
+      });
 
 /*==Auf Seite C==*/
 
-/*$('body #indexc').live("swipeleft", function(){
+$('body #indexc').live("swipeleft", function(){
         var nextpage = $("#indexa");
         $.mobile.changePage(nextpage, 'slide');
-      });*/
+      });
 
 /*Ende Index*/
 
@@ -88,8 +94,14 @@ $('.bilda').live('pagecreate', function(e){
 		$.mobile.changePage('#indexa', 'slideup');
 	});
 });
-/*==Bilder==*/
 
+/*Mediaplayer erst nach erstem Bildaufruf anzeigen*/
+$('body #indexa').live('pagecreate', function (g) {
+	$('.uebersichtsspan').click(function(g) {
+		$('#footer').css('display', 'block');
+	});
+});
+/*==Bilder==*/
 $("body #indexa").live('pagecreate', function(e){
 	$("#1").click(function(e) {
 		$.mobile.changePage('#01a', 'slidedown');
