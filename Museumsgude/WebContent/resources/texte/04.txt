@@ -1,4 +1,5 @@
-﻿<b>Heinrich Heidersberger</b>
+﻿<audio class="textaudio" controls><source src="resources/texte/audio/04.mp3" type='audio/mpeg'></audio>
+<b>Heinrich Heidersberger</b>
 • 1906 - 2006
 • Entwickelte von ihm erfundene Rhythmogramme
 • Konkrete Fotografien bilden nicht die Wirklichkeit ab, sondern werden aus den ureigensten fotografischen Mitteln entwickelt

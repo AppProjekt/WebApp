@@ -1,4 +1,5 @@
-﻿<b>Manfred Mohr</b>
+﻿<audio class="textaudio" controls><source src="resources/texte/audio/20.mp3" type='audio/mpeg'></audio>
+<b>Manfred Mohr</b>
 • *1938
 • Pionier der Computerkunst
 • Computer und eigene Software als Hilfsmittel

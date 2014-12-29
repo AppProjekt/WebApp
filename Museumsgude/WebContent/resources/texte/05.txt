@@ -1,4 +1,5 @@
-﻿<b>Dieter Jung</b>
+﻿<audio class="textaudio" controls><source src="resources/texte/audio/05.mp3" type='audio/mpeg'></audio>
+<b>Dieter Jung</b>
 • *1946
 • Jung studierte u.a. Grafik und Experimentellen Film an der School of Holography in New York
 • Erhielt seit den 70er Jahren zahlreiche Preise für seine Arbeit an Holographien, die ein ganz neues Medium darstellten

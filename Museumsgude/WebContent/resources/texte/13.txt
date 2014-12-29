@@ -1,4 +1,5 @@
-﻿<b>Heijo Hangen</b>
+﻿<audio class="textaudio" controls><source src="resources/texte/audio/13.mp3" type='audio/mpeg'></audio>
+<b>Heijo Hangen</b>
 • *1927
 • Hangen beginnt ab den 60er Jahren sich mit Modulen zu beschäftigen
 • Entwickelt 1969 <i>sein</i> Modul

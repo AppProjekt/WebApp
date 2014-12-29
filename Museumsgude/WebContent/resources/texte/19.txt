@@ -1,4 +1,5 @@
-﻿<b>Peter Keetmann</b>
+﻿<audio class="textaudio" controls><source src="resources/texte/audio/19.mp3" type='audio/mpeg'></audio>
+<b>Peter Keetmann</b>
 • 1916 - 2005
 • Lichtbildwesen (Bayerische Staatslehranstalt), Werbefotograf
 • Frage nach Individualität und Leistung der Fotographie als Kunst

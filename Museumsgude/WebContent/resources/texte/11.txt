@@ -1,4 +1,5 @@
-﻿<b>Suzanne Daetwyler</b>
+﻿<audio class="textaudio" controls><source src="resources/texte/audio/11.mp3" type='audio/mpeg'></audio>
+<b>Suzanne Daetwyler</b>
 • Verbildlichung der Welt jenseits des Chaos (Harmonie, Ordnung, Schönheit, Reinheit, Ruhe)
 
 <b>Primzahlen</b>

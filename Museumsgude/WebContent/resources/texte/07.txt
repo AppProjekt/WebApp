@@ -1,4 +1,5 @@
-﻿<b>Franҫois Morellet</b>
+﻿<audio class="textaudio" controls><source src="resources/texte/audio/07.mp3" type='audio/mpeg'></audio>
+<b>Franҫois Morellet</b>
 • *1926
 • Animation zum Malen durch das künstlerisch geprägte Paris
 • Freundschaft mit Maler Almir Mavignier, Kennenlernen der Werke Max Bills -> Inspiration zu ersten geometrischen Werken

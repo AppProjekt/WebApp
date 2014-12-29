@@ -1,4 +1,5 @@
-﻿<b>Victor Vasarely</b>
+﻿<audio class="textaudio" controls><source src="resources/texte/audio/08.mp3" type='audio/mpeg'></audio>
+<b>Victor Vasarely</b>
 • 1906 - 1977
 • Hauptthematik: Optische Täuschung -> Kunstrichtung: Op-Art
 

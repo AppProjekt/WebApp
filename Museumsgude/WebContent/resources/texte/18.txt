@@ -1,4 +1,5 @@
-﻿<b>Karl Gerstner</b>
+﻿<audio class="textaudio" controls><source src="resources/texte/audio/18.mp3" type='audio/mpeg'></audio>
+<b>Karl Gerstner</b>
 • *1930
 • Studium der Typographie, Farbtheoretiker, Grafikdesigner
 • Gründung der Werbeagentur Gerstner + Kutter

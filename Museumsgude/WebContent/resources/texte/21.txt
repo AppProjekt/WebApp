@@ -1,4 +1,5 @@
-﻿<b>Maurizio Nannuci</b>
+﻿<audio class="textaudio" controls><source src="resources/texte/audio/21.mp3" type='audio/mpeg'></audio>
+<b>Maurizio Nannuci</b>
 • *1939 (Florenz)
 • Das Wort bleibt immer Dreh- und Angelpunkt seiner Überlegungen
 • Nannuci verbindet Licht, Raum und Sprache in seiner Lichtkunst

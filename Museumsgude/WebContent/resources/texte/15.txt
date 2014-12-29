@@ -1,4 +1,5 @@
-﻿<b>Martin Willing</b>
+﻿<audio class="textaudio" controls><source src="resources/texte/audio/15.mp3" type='audio/mpeg'></audio>
+<b>Martin Willing</b>
 • *1958
 • Erfahrungen der Kindheit (Fahrradladen des Vaters, Natur…) grundlegend für seine Karriere als Künstler
 • Experimente mit Vollmetallen, wie Stahl, Duraluminium und Titan (Veränderung durch Formung, Biegung und Schichtung)

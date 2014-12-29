@@ -1,4 +1,5 @@
-﻿<b>Jesús-Rafael Soto</b>
+﻿<audio class="textaudio" controls><source src="resources/texte/audio/25.mp3" type='audio/mpeg'></audio>
+<b>Jesús-Rafael Soto</b>
 • 1923 (Ciudad Bolivar) - 2005 (Paris)
 • Um Sotos Werke verstehen zu können, muss sich der Betrachter im Raum bewegen; nur so ist die Illusion der Beweglichkeit erkennbar
 
