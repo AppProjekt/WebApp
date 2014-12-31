@@ -13,38 +13,74 @@ body div.indexpage div.indexheader {
 	position: absolute;
 	top: 0;
 	width: 100%;
-	height: 31px;
+	height: 35px;
 	color: #333;
 	background: white;
-	background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0,#ddd),color-stop(1,#fff));
+	/*background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0,#ddd),color-stop(1,#fff));*/
 	font-weight: normal;
 	font-size: 15px;
 	font-family: Calibri;
 	text-shadow: 0 0 0;
 	text-align: center;
-	
+	/*border-bottom: 1px solid #333;*/
 	z-index: 20;
 }
 
-body .indexpage .indexheader #aktiv {
-	font-weight: bold;
-	color: #333;
-	cursor: default;
-}
+
 body .indexpage .indexheader span {
 	display: inline-block;
-	margin: 1px 5px 1px 5px;
+	/*margin: 10px 0 5px 0;*/
+	padding: 5px 20px 5px 20px;
 	cursor: default;
+	background: white;
+	border-top: 1px solid #666;
+	border-bottom: 1px solid #666;
 }
-body .indexpage .indexheader .linksbuendig {
-	float: left;
-	cursor: pointer;
+.indexpage .indexheader span.aktiv {
+	display: inline-block;
+	color: #fff;
+	background-color: #333;
+	cursor: default;
+	border-bottom: 1px solid #333;
+	border-top: 1px solid #333;
+	width: 130px;
+	position: absolute;
+	left: calc(50% - 65px);
+	top: 10px;
+	z-index: 1;
 }
-body .indexpage .indexheader .rechtsbuendig {
-	float: right;
+.indexpage .indexheader .linksbuendig {
+	position: fixed;;
+	left: 20px;
+	top: 10px;
 	cursor: pointer;
+	/*margin-left: 20px;*/
+	z-index: 10;
 }
 
+.indexpage .indexheader .rechtsbuendig {
+	/*float: right;*/
+	position: fixed;
+	right: 20px;
+	top: 10px;
+	cursor: pointer;
+	/*margin-right: 20px;*/
+	z-index: 11;
+}
+@media screen and (max-width: 960px) {
+	.indexpage .indexheader .aktiv,
+	.bildheader .zuruebersicht {
+		font-size: 13px;	
+	}
+	.indexpage .indexheader .linksbuendig {
+		left: 0;
+		padding: 5px;
+	}
+	.indexpage .indexheader .rechtsbuendig {
+		right: 0;
+		padding: 5px;
+	}
+}
 /*===Index content===*/
 body .indexpage .indexcontent {
 	max-width: 80%;
@@ -100,49 +136,81 @@ body .bildc .bildheader {
 	position: absolute;
 	top: 0;
 	width: 100%;
-	height: 31px;
+	height: 35px;
 	color: #333;
 	background: white;
-	background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0,#ddd),color-stop(1,#fff));
+	/*background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0,#ddd),color-stop(1,#fff));*/
 	font-weight: normal;
 	font-size: 15px;
 	font-family: Calibri;
 	text-shadow: 0 0 0;
 	text-align: center;
-	
+	/*border-bottom: 1px solid #333;*/
 	z-index: 20;
 }
 
-.bildheader #aktiv {
-	font-weight: bold;
-	color: #333;
-	cursor: default;
-}
+
 
 .bildheader span {
 	display: inline-block;
-	margin: 1px 5px 1px 5px;
+	/*margin: 10px 0 5px 0;*/
+	padding: 5px 20px 5px 20px;
 	cursor: default;
+	background: white;
+	border-top: 1px solid #666;
+	border-bottom: 1px solid #666;
 }
-
+.bildheader span.aktiv {
+	display: inline-block;
+	color: #fff;
+	background-color: #333;
+	cursor: default;
+	border-bottom: 1px solid #333;
+	border-top: 1px solid #333;
+	width: 130px;
+	position: absolute;
+	left: calc(50% - 65px);
+	top: 10px;
+}
 .bildheader .linksbuendig {
-	float: left;
+	position: fixed;
+	left: 20px;
+	top: 10px;
 	cursor: pointer;
+	/*margin-left: 20px;*/
 }
 
 .bildheader .rechtsbuendig {
-	float: right;
+	/*float: right;*/
+	position: fixed;
+	right: 20px;
+	top: 10px;
 	cursor: pointer;
+	/*margin-right: 20px;*/
 }
-
-.bildheader .zuruebersicht#aktiv {
+@media screen and (max-width: 960px) {
+	.bildheader .linksbuendig {
+		left: 0;
+	}
+	.bildheader .rechtsbuendig {
+		right: 0
+	}
+}
+.bildheader .zuruebersicht {
 	/*background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0,#ccc),color-stop(1,#fff));
 	background-color: #ccc;/*/
-	padding: 5px 20px 10px 20px;
+	/*padding: 5px 20px 10px 20px;*/
+	position: fixed;
+	width: 130px;
+	display: inline-block;
 	font-size: 16px;
 	font-weight: bold;
 	cursor: pointer;
+	position: absolute;
+	left: calc(50% - 65px);
+	top: 10px;
 }
+
 
 /*===content===*/
 /*===content Bild===*/
@@ -233,7 +301,7 @@ body .bildb .bildcontent_text #p iframe {
 body .bildb img.textbild {
 	float: left;
 	width: 15%;
-	margin-top: 75px;
+	margin-top: 105px;
 }
 
 body .bildb .bildcontent_text p.textfeld {
@@ -293,6 +361,9 @@ body .bildb .bildcontent_text audio.textaudio {
 		max-width: 70%;
 		margin: 40px auto;		
 	}
+	body .bildb img.textbild {
+		margin-top: 75px;
+	} 
 }
 @media screen and (max-width: 480px) {
 	body .bildb .bildcontent_text {

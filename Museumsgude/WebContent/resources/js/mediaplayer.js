@@ -3,7 +3,7 @@ $(function() {
 		  var plHash = window.location.hash;
 		  //  var Bildnr = Hash.substring(1, 3);
 		  var plBildnr = plHash.replace(/\D+/g,"");
-		  var plimg = plBildnr.replace(/0/,"");
+		  var plimg = plBildnr.replace(/^0/,"");
 		  if (plBildnr == BildnrInBug) {
 				$("#jquery_jplayer_1").jPlayer({
 						ready: function () {
@@ -49,7 +49,7 @@ $(function() {
 		  var plHash = window.location.hash;
 		  //  var Bildnr = Hash.substring(1, 3);
 		  var plBildnr = plHash.replace(/\D+/g,"");
-		  var plimg = plBildnr.replace(/0/,"");
+		  var plimg = plBildnr.replace(/^0/,"");
 		  if (plBildnr == BildnrInBug) {
 			  $("#jquery_jplayer_1").jPlayer("play");
 		  } 
