@@ -151,6 +151,7 @@ $('.bilda').live('pagecreate', function(e){
 	$(".zuruebersicht").click(function(e) {
 		$.mobile.changePage('#indexa', 'pop');
 		$('.textfeld').html("");
+		$('.speicher').html("");
 	});
 });
 
