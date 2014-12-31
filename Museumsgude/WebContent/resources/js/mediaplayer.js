@@ -1,10 +1,10 @@
 $(function() { 
     	var BildnrInBug = "";
-		  var Hash = window.location.hash;
+		  var plHash = window.location.hash;
 		  //  var Bildnr = Hash.substring(1, 3);
-		  var Bildnr = Hash.replace(/\D+/g,"");
-		  var plimg = Bildnr.replace(/0/,"");
-		  if (Bildnr == BildnrInBug) {
+		  var plBildnr = plHash.replace(/\D+/g,"");
+		  var plimg = plBildnr.replace(/0/,"");
+		  if (plBildnr == BildnrInBug) {
 				$("#jquery_jplayer_1").jPlayer({
 						ready: function () {
 							$(this).jPlayer("setMedia", {
@@ -17,14 +17,14 @@ $(function() {
 					});
 				
 		  } else {
-    	var Titel = Bildnr;
+    	var plTitel = plBildnr;
     	
-    	var Quelle = "resources/musikstuecke/" + Bildnr + ".mp3";
+    	var plQuelle = "resources/musikstuecke/" + plBildnr + ".mp3";
     	$("#jquery_jplayer_1").jPlayer({
     	  ready: function () {
           $(this).jPlayer("setMedia", {
-             title: "Bild " + Titel,
-             m4a: Quelle				
+             title: "Bild " + plTitel,
+             m4a: plQuelle				
           });
         
         },
@@ -46,19 +46,19 @@ $(function() {
 
 	$("#TrackwahlPlay").click(function() {
 		  var BildnrInBug = "";
-		  var Hash = window.location.hash;
+		  var plHash = window.location.hash;
 		  //  var Bildnr = Hash.substring(1, 3);
-		  var Bildnr = Hash.replace(/\D+/g,"");
-		  var plimg = Bildnr.replace(/0/,"");
-		  if (Bildnr == BildnrInBug) {
+		  var plBildnr = plHash.replace(/\D+/g,"");
+		  var plimg = plBildnr.replace(/0/,"");
+		  if (plBildnr == BildnrInBug) {
 			  $("#jquery_jplayer_1").jPlayer("play");
 		  } 
 		  else {
-		  var Titel = $("#jp_container_1 div div.jp-details ul li span").html();
-		  if ("Bild " + Bildnr != Titel) {
-			  var Titel = Bildnr;
+		  var plTitel = $("#jp_container_1 div div.jp-details ul li span").html();
+		  if ("Bild " + plBildnr != plTitel) {
+			  var plTitel = plBildnr;
 			  
-			  var Quelle = "resources/musikstuecke/" + Bildnr + ".mp3";
+			  var plQuelle = "resources/musikstuecke/" + plBildnr + ".mp3";
 
 
 				    $("#jquery_jplayer_1").jPlayer("destroy");
@@ -67,8 +67,8 @@ $(function() {
 				       $("#jquery_jplayer_1").jPlayer({
 				          ready: function () {
 				          $(this).jPlayer("setMedia", {
-				             title: "Bild " + Titel,
-				             m4a: Quelle
+				             title: "Bild " + plTitel,
+				             m4a: plQuelle
 				          	 });
 
 				          },
@@ -78,10 +78,8 @@ $(function() {
 				      $("#playerimg").attr("src", "resources/bilder/" + plimg + ".jpg");
 				    });
 				 window.setTimeout("Play ()", 1000);
-		   }
-
-		   else {
+		   } else {
 
 		   }
-		  }
+	}
 	});

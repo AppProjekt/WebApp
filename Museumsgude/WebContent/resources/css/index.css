@@ -2,10 +2,11 @@
 /* ================
 	Anfang Index
 		=============== */
-		
+	
 body div.indexpage {
 	width: 100%;
 	height: 100%;
+	background: white;
 }
 
 body div.indexpage div.indexheader {
@@ -28,19 +29,20 @@ body div.indexpage div.indexheader {
 body .indexpage .indexheader #aktiv {
 	font-weight: bold;
 	color: #333;
+	cursor: default;
 }
-
-body .indexpage .indexheader .linksbuendig {
-	float: left;
-}
-
 body .indexpage .indexheader span {
 	display: inline-block;
 	margin: 1px 5px 1px 5px;
+	cursor: default;
 }
-
+body .indexpage .indexheader .linksbuendig {
+	float: left;
+	cursor: pointer;
+}
 body .indexpage .indexheader .rechtsbuendig {
 	float: right;
+	cursor: pointer;
 }
 
 /*===Index content===*/
@@ -76,6 +78,7 @@ body .indexpage .indexcontent #einfuehrung {
 }
 #einfuehrung > tbody > tr > td.einftext {
 	background-color: #eee;
+	cursor: default;
 }
 
 /*Ende Index*/
@@ -113,22 +116,26 @@ body .bildc .bildheader {
 .bildheader #aktiv {
 	font-weight: bold;
 	color: #333;
+	cursor: default;
 }
 
 .bildheader span {
 	display: inline-block;
 	margin: 1px 5px 1px 5px;
+	cursor: default;
 }
 
 .bildheader .linksbuendig {
 	float: left;
+	cursor: pointer;
 }
 
 .bildheader .rechtsbuendig {
 	float: right;
+	cursor: pointer;
 }
 
-.bildheader .zuruebersicht {
+.bildheader .zuruebersicht#aktiv {
 	/*background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0,#ccc),color-stop(1,#fff));
 	background-color: #ccc;/*/
 	padding: 5px 20px 10px 20px;
