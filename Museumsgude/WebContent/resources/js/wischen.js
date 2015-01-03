@@ -119,7 +119,7 @@ $('.bildb').live('pagecreate', function(r){
 });
 /*==Auf Seite C==*/
 
-$(".bildc").live("swipeleft", function(){
+$(".bildc .bildheader").live("swipeleft", function(){
 	var Hash = window.location.hash;
 	var wischBildnr = Hash.replace(/\D+/g,"");
 	var A = "#" + wischBildnr + "a";
@@ -127,11 +127,7 @@ $(".bildc").live("swipeleft", function(){
         var nextpage = $(A);
         $.mobile.changePage(nextpage, 'pop');
         $('.bildcontent_ggb').html('<p style="margin: 80px; text-align: center;">Zu diesem Werk ist leider keine Animation vorhanden.</p>');
-    	
-    /*    $.each($('audio.textaudio'), function () {
-        	 this.pause();
-        	 this.currentTime = 0;
-        	 });*/
+
       });
 $('.bildc').live('pagecreate', function(r){
 	$(".bildc > div.bildheader > span.rechtsbuendig").click(function(r) {
