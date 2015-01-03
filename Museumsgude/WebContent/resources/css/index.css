@@ -105,18 +105,27 @@ body .indexpage .container_new > ul> li > a > span {
 }
 body .indexpage .indexcontent #einfuehrung {
 	width: 100%;
+	
 }
 #einfuehrung > tbody > tr > td {
 	text-align: center;
-	vertical-align: center;
-	height: 100px;
-	width: 350px; !important
+	vertical-align: middle;
+	height: auto;
+	width: 50%;
+	border: 5px solid #333;
+	
 }
 #einfuehrung > tbody > tr > td.einftext {
-	background-color: #eee;
+	background-color: #333;
+	color: white;
 	cursor: default;
+	padding: 5px 10px;
+	border: 5px solid #333;
 }
-
+#einfuehrung > tbody > tr > td > img {
+	width: 100%;
+	display: block;
+};
 /*Ende Index*/
 /*==================
 	Anfang Bilder
