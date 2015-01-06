@@ -4,7 +4,7 @@ $(function() {
 	$('.uebersichtsspan').css('background-size', '100% 100%');
 });
 $(function() {
-	var calcleftInnerwidth = window.innerWidth;
+	var calcleftInnerwidth = screen.availWidth;
 	var calcleft = calcleftInnerwidth / 2 - 65;
 	$('span.aktiv').css('left', calcleft + 'px');
 	$('span.zuruebersicht').css('left', calcleft + 'px');
