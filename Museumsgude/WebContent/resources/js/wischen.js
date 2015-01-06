@@ -6,7 +6,6 @@ $(function() {
 $(function() {
 	var calcleftInnerwidth = window.innerWidth;
 	var calcleft = calcleftInnerwidth / 2 - 65;
-	alert(calcleft);
 	$('span.aktiv').css('left', calcleft + 'px');
 	$('span.zuruebersicht').css('left', calcleft + 'px');
 
