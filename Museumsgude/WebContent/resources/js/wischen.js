@@ -4,8 +4,9 @@ $(function() {
 	$('.uebersichtsspan').css('background-size', '100% 100%');
 });
 $(function() {
-	if(screen.availWidth == window.innerWidth) {
-	var calcleftInnerwidth = screen.availWidth;
+	if(screen.width == window.innerWidth) {
+		alert("==");
+	var calcleftInnerwidth = screen.width;
 	var calcleft = calcleftInnerwidth / 2 - 65;
 	$('span.aktiv').css('left', calcleft + 'px');
 	$('span.zuruebersicht').css('left', calcleft + 'px');
@@ -15,7 +16,7 @@ $(function() {
 		$('span.aktiv').css('left', calcleft + 'px');
 		$('span.zuruebersicht').css('left', calcleft + 'px');
 
-	}
+	};
 });
 /*Anfang Index*/
 /*==Auf Seite A==*/
