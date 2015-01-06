@@ -4,11 +4,18 @@ $(function() {
 	$('.uebersichtsspan').css('background-size', '100% 100%');
 });
 $(function() {
+	if(screen.availWidth == window.innerWidth) {
 	var calcleftInnerwidth = screen.availWidth;
 	var calcleft = calcleftInnerwidth / 2 - 65;
 	$('span.aktiv').css('left', calcleft + 'px');
 	$('span.zuruebersicht').css('left', calcleft + 'px');
+	} else {
+		var calcleftInnerwidth = window.innerWidth;
+		var calcleft = calcleftInnerwidth / 2 - 65;
+		$('span.aktiv').css('left', calcleft + 'px');
+		$('span.zuruebersicht').css('left', calcleft + 'px');
 
+	}
 });
 /*Anfang Index*/
 /*==Auf Seite A==*/
