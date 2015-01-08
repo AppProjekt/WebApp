@@ -1,3 +1,9 @@
+//Einblendungen ausblenden
+$('.einbinfo').live('click', function() {
+	$('.einbinfo').css('display', 'none');
+});
+
+//=================
 $(function() {
 	var spanbreite = $('.uebersichtsspan').css('width');
 	$('.uebersichtsspan').css('height', spanbreite);
