@@ -1,5 +1,5 @@
 @CHARSET "ISO-8859-1";
-.einbinfo {
+.einbtippen, .einbuebers, .einbinfo, .einbhoeren, .einbwischen {
 	position: fixed;
 	display: block;
 	left: 15%;

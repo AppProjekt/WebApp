@@ -1,8 +1,36 @@
 //Einblendungen ausblenden
+$('.einbwischen').live('click', function() {
+	$('.einbwischen').css('display', 'none');
+});
+//Wird auch in Wischbefehlen bei Index ausgeblendet. Zeile 50 - 91
+
 $('.einbinfo').live('click', function() {
 	$('.einbinfo').css('display', 'none');
 });
+$('audio').live('click', function() {
+	$('.einbinfo').css('display', 'none');
+});
 
+$('.einbtippen').live('click', function() {
+	$('.einbtippen').css('display', 'none');
+});
+$('.uebersichtsspan').live('click', function() {
+	$('.einbtippen').css('display', 'none');
+});
+
+$('.einbuebers').live('click', function() {
+	$('.einbuebers').css('display', 'none');
+});
+$('.zuruebersicht').live('click', function() {
+	$('.einbuebers').css('display', 'none');
+});
+
+$('.einbhoeren').live('click', function() {
+	$('.einbhoeren').css('display', 'none');
+});
+$('#TrackwahlPlay').live('click', function() {
+	$('.einbhoeren').css('display', 'none');
+});
 //=================
 $(function() {
 	var spanbreite = $('.uebersichtsspan').css('width');
@@ -22,18 +50,22 @@ $(function() {
 $('body #indexa').live("swipeleft", function(){
         var nextpage = $("#indexb");
         $.mobile.changePage(nextpage, 'pop');
+        $('.einbwischen').css('display', 'none');
       });
 $('#indexa').live('pagecreate', function(r){
 	$("#indexa > div.indexheader > span.rechtsbuendig").click(function(r) {
+		$('.einbwischen').css('display', 'none');
 		$.mobile.changePage('#indexb', 'pop');
 	});
 });
 $('body #indexa').live("swiperight", function(){
        var prevpage = $("#indexc");
+       $('.einbwischen').css('display', 'none');
         $.mobile.changePage(prevpage, 'pop');
       });
 $('#indexa').live('pagecreate', function(r){
 	$("#indexa > div.indexheader > span.linksbuendig").click(function(r) {
+		$('.einbwischen').css('display', 'none');
 		$.mobile.changePage('#indexc', 'pop');
 	});
 });
@@ -41,10 +73,12 @@ $('#indexa').live('pagecreate', function(r){
 
 $('body #indexb').live("swiperight", function(){
        var prevpage = $("#indexa");
+       $('.einbwischen').css('display', 'none');
         $.mobile.changePage(prevpage, 'pop', true);
       });
 $('#indexb').live('pagecreate', function(r){
 	$("#indexb > div.indexheader > span.linksbuendig").click(function(r) {
+		$('.einbwischen').css('display', 'none');
 		$.mobile.changePage('#indexa', 'pop');
 	});
 });
@@ -52,10 +86,12 @@ $('#indexb').live('pagecreate', function(r){
 
 $('body #indexc').live("swipeleft", function(){
         var nextpage = $("#indexa");
+        $('.einbwischen').css('display', 'none');
         $.mobile.changePage(nextpage, 'pop');
       });
 $('#indexc').live('pagecreate', function(r){
 	$("#indexc > div.indexheader > span.rechtsbuendig").click(function(r) {
+		$('.einbwischen').css('display', 'none');
 		$.mobile.changePage('#indexa', 'pop');
 	});
 });
