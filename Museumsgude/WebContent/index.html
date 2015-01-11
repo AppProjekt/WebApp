@@ -18,7 +18,7 @@
     
       <script type="text/javascript" src="resources/js/indexcheck.js"></script>
       <script type="text/javascript" src="resources/js/jPlayer/jquery.jplayer.min.js"></script>
- 
+ 		<script type="text/javascript" src="resources/js/swipeupdown.js"></script>
 	  <script type="text/javascript" src="resources/js/wischen.js"></script>
 
       <link type="text/css" href="resources/css/jPlayer/jplayer.blue.monday.css" rel="stylesheet" />      
@@ -78,7 +78,7 @@
 				 <p style="color: transparent;">.</p>
 		</div>
 		<p  class="einbtippen"><b>Tippen</b> Sie auf ein Bild, um mehr darüber zu erfahren!</p>
-		<p  class="einbwischen"><b>Wischen</b> Sie nach rechts oder links, um die am oberen Rand angezeigten Tabs aufzurufen oder tippen Sie auf deren Beschriftung!</p>
+		<p  class="einbwischen"><b>Wischen</b> Sie nach rechts oder links, um die am oberen Rand angezeigten Tabs aufzurufen oder <b>tippen</b> Sie auf deren Beschriftung!</p>
     	
     </div>
     
@@ -87,11 +87,11 @@
     	<div class="indexcontent" style="max-width: 100%;">
     	<table id="einfuehrung">
     
-    	<tr><td class="einftext"><b>Wischen</b> Sie nach rechts oder links, um die am oberen Rand angezeigten Tabs aufzurufen oder tippen Sie auf deren Beschriftung!</td><td><img src="resources/bilder/wischen.png"></td></tr>
-    	<tr><td><img src="resources/bilder/tippen.png" ></td><td class="einftext"><b>Tippen</b> Sie auf ein Bild, um mehr darüber zu erfahren!</td></tr>
+    	<tr><td class="einftext"><b>Wischen</b> Sie nach rechts oder links, um die am oberen Rand angezeigten Tabs aufzurufen oder <b>tippen</b> Sie auf deren Beschriftung!</td><td><img src="resources/bilder/wischen.png"></td></tr>
+    	<tr><td><img src="resources/bilder/tippen.png" ></td><td class="einftext"><b>Wischen</b> Sie nach oben oder <b>tippen</b> Sie auf ein Bild, um mehr darüber zu erfahren!</td></tr>
     	<tr><td class="einftext"><b>Hören</b> Sie eine Vertonung des P-Seminars im Player unten an!</td><td><img src="resources/bilder/einfuehrung_musikplayer.png"></td></tr>
     	<tr><td><img src="resources/bilder/einfuehrung_textplayer.png" ></td><td class="einftext">Erhalten Sie <b>Informationen</b> zu Bild und Künstler im kleinen Mediaplayer unter  <i>Information</i>!</td></tr>
-    	<tr><td class="einftext"><b>Tippen</b> Sie auf <i>Zur Übersicht</i>, um die Bildansicht zu verlassen!</td><td><img src="resources/bilder/einfuehrung_zuruebersicht.png"></td></tr>
+    	<tr><td class="einftext"><b>Wischen</b> Sie nach oben oder <b>tippen</b> Sie auf <i>Zur Übersicht</i>, um die Bildansicht zu verlassen!</td><td><img src="resources/bilder/einfuehrung_zuruebersicht.png"></td></tr>
     	<tr><td><img src="resources/bilder/einfuehrung_animation.png"></td><td class="einftext">Erleben Sie im Tab <i>Animation</i> <b>interaktiv</b> die Entstehung des Bildes!</td></tr>
     	</table>
     	<p class="spacer"></p>
@@ -120,13 +120,12 @@ Wir bedanken uns an dieser Stelle noch mal ganz herzlich für die Unterstützung
 </ul>
 Nun wünscht Ihnen das Projekt-Seminar viel Freude bei einem informativen Rundgang mit diesem neuen Medium!<br><br>
 Ihr Projekt-Seminar
+
+<img id="seminar" alt="" src="resources/bilder/seminar.jpg">
 <p id="bilder">
 <img class="logos" alt="" src="resources/bilder/kulturspeicher.png">
 <img class="logos" alt="" src="resources/bilder/mgg.png">
 <img class="logos" alt="" src="resources/bilder/jungeforscher.jpg"></p>
-
-
-<img id="seminar" alt="" src="resources/bilder/seminar.jpg">
 <p class="spacer"></p>
        </div>
     
@@ -141,7 +140,7 @@ Ihr Projekt-Seminar
     	<div class="bildcontent">
     		<img src="resources/bilder/1.jpg">
     	</div>
-    	<p  class="einbuebers"><b>Tippen</b> Sie auf <i>Zur Übersicht</i>, um die Bildansicht zu verlassen!</p>
+    	<p  class="einbuebers"><b>Wischen</b> Sie nach oben oder <b>tippen</b> Sie auf <i>Zur Übersicht</i>, um die Bildansicht zu verlassen!</p>
     	<p  class="einbhoeren"><b>Hören</b> Sie eine Vertonung des P-Seminars im Player unten an!</p>
 </div>
  
@@ -161,7 +160,7 @@ Ihr Projekt-Seminar
     	<div class="bildheader"><span class="aktiv" >Animation</span><span class="rechtsbuendig">Bild</span></div> 
     	<br/>
     	<div class="bildcontent_ggb" id="ggb01" data-param-width="50">
-    	<p style="margin: 80px; text-align: center;">Zu diesem Werk ist leider keine Animation vorhanden.</p>
+    	<p style="margin: 80px; text-align: center; padding: 10px; border: 5px solid #333;">Zu diesem Werk ist leider keine Animation vorhanden.<br><br>Tippen Sie auf <i>Bild</i>, um zurückzukehren.</p>
         </div>
 </div> 
  
@@ -171,7 +170,7 @@ Ihr Projekt-Seminar
     	<div class="bildheader"><span class="linksbuendig">Animation</span><span class="zuruebersicht">Zur Übersicht</span><span class="rechtsbuendig">Information</span></div> 
     	<div class="bildcontent">
     		<img src="resources/bilder/2.jpg">
-    	</div>  <p  class="einbuebers"><b>Tippen</b> Sie auf <i>Zur Übersicht</i>, um die Bildansicht zu verlassen!</p><p  class="einbhoeren"><b>Hören</b> Sie eine Vertonung des P-Seminars im Player unten an!</p>
+    	</div>  <p  class="einbuebers"><b>Wischen</b> Sie nach oben oder <b>tippen</b> Sie auf <i>Zur Übersicht</i>, um die Bildansicht zu verlassen!</p><p  class="einbhoeren"><b>Hören</b> Sie eine Vertonung des P-Seminars im Player unten an!</p>
     	    	
 </div>
  
@@ -191,7 +190,7 @@ Ihr Projekt-Seminar
     	<div class="bildheader"><span class="aktiv" >Animation</span><span class="rechtsbuendig">Bild</span></div> 
     	<br/>
     	<div class="bildcontent_ggb" id="ggb02" data-param-width="50">
-    	<p style="margin: 80px; text-align: center;">Zu diesem Werk ist leider keine Animation vorhanden.</p>
+    	<p style="margin: 80px; text-align: center; padding: 10px; border: 5px solid #333;">Zu diesem Werk ist leider keine Animation vorhanden.<br><br>Tippen Sie auf <i>Bild</i>, um zurückzukehren.</p>
         </div>
 </div> 
     
@@ -201,7 +200,7 @@ Ihr Projekt-Seminar
     	<div class="bildheader"><span class="linksbuendig">Animation</span><span class="zuruebersicht">Zur Übersicht</span><span class="rechtsbuendig">Information</span></div> 
     	<div class="bildcontent">
     		<img src="resources/bilder/3.jpg">
-    	</div>      <p  class="einbuebers"><b>Tippen</b> Sie auf <i>Zur Übersicht</i>, um die Bildansicht zu verlassen!</p><p  class="einbhoeren"><b>Hören</b> Sie eine Vertonung des P-Seminars im Player unten an!</p>
+    	</div>      <p  class="einbuebers"><b>Wischen</b> Sie nach oben oder <b>tippen</b> Sie auf <i>Zur Übersicht</i>, um die Bildansicht zu verlassen!</p><p  class="einbhoeren"><b>Hören</b> Sie eine Vertonung des P-Seminars im Player unten an!</p>
     		
 </div>
  
@@ -220,7 +219,7 @@ Ihr Projekt-Seminar
     	<div class="bildheader"><span class="aktiv">Animation</span><span class="rechtsbuendig">Bild</span></div> 
     	<br/>
     	<div class="bildcontent_ggb" id="ggb03" data-param-width="50">
-    	<p style="margin: 80px; text-align: center;">Zu diesem Werk ist leider keine Animation vorhanden.</p>
+    	<p style="margin: 80px; text-align: center; padding: 10px; border: 5px solid #333;">Zu diesem Werk ist leider keine Animation vorhanden.<br><br>Tippen Sie auf <i>Bild</i>, um zurückzukehren.</p>
         </div>
 </div> 
     
@@ -230,7 +229,7 @@ Ihr Projekt-Seminar
     	<div class="bildheader"><!-- <span class="linksbuendig">Animation</span> --><span class="zuruebersicht" class="aktiv" >Zur Übersicht</span><span class="rechtsbuendig">Information</span></div> 
     	<div class="bildcontent">
     		<img src="resources/bilder/4.jpg">
-    	</div>   <p  class="einbuebers"><b>Tippen</b> Sie auf <i>Zur Übersicht</i>, um die Bildansicht zu verlassen!</p><p  class="einbhoeren"><b>Hören</b> Sie eine Vertonung des P-Seminars im Player unten an!</p>
+    	</div>   <p  class="einbuebers"><b>Wischen</b> Sie nach oben oder <b>tippen</b> Sie auf <i>Zur Übersicht</i>, um die Bildansicht zu verlassen!</p><p  class="einbhoeren"><b>Hören</b> Sie eine Vertonung des P-Seminars im Player unten an!</p>
     	   	
 </div>
  
@@ -249,7 +248,7 @@ Ihr Projekt-Seminar
     	<div class="bildheader"><span class="aktiv">Animation</span><span class="rechtsbuendig">Bild</span></div> 
     	<br/>
     	<div class="bildcontent_ggb" id="ggb04" data-param-width="50">
-    	<p style="margin: 80px; text-align: center;">Zu diesem Werk ist leider keine Animation vorhanden.</p>
+    	<p style="margin: 80px; text-align: center; padding: 10px; border: 5px solid #333;">Zu diesem Werk ist leider keine Animation vorhanden.<br><br>Tippen Sie auf <i>Bild</i>, um zurückzukehren.</p>
         </div>
 </div> 
 <!-- Bild 5 -->
@@ -258,7 +257,7 @@ Ihr Projekt-Seminar
     	<div class="bildheader"><!--<span class="linksbuendig">Animation</span>--><span class="zuruebersicht" class="aktiv" >Zur Übersicht</span><span class="rechtsbuendig">Information</span></div> 
     	<div class="bildcontent">
     		<img src="resources/bilder/5.jpg">
-    	</div>      <p  class="einbuebers"><b>Tippen</b> Sie auf <i>Zur Übersicht</i>, um die Bildansicht zu verlassen!</p><p  class="einbhoeren"><b>Hören</b> Sie eine Vertonung des P-Seminars im Player unten an!</p>
+    	</div>      <p  class="einbuebers"><b>Wischen</b> Sie nach oben oder <b>tippen</b> Sie auf <i>Zur Übersicht</i>, um die Bildansicht zu verlassen!</p><p  class="einbhoeren"><b>Hören</b> Sie eine Vertonung des P-Seminars im Player unten an!</p>
     		
 </div>
  
@@ -278,7 +277,7 @@ Ihr Projekt-Seminar
     	<div class="bildheader"><span class="aktiv">Animation</span><span class="rechtsbuendig">Bild</span></div> 
     	<br/>
     	<div class="bildcontent_ggb" id="ggb05" data-param-width="50">
-    	<p style="margin: 80px; text-align: center;">Zu diesem Werk ist leider keine Animation vorhanden.</p>
+    	<p style="margin: 80px; text-align: center; padding: 10px; border: 5px solid #333;">Zu diesem Werk ist leider keine Animation vorhanden.<br><br>Tippen Sie auf <i>Bild</i>, um zurückzukehren.</p>
         </div>
 </div>
 
@@ -288,7 +287,7 @@ Ihr Projekt-Seminar
     	<div class="bildheader"><!--<span class="linksbuendig">Animation</span>--><span class="zuruebersicht" class="aktiv" >Zur Übersicht</span><span class="rechtsbuendig">Information</span></div> 
     	<div class="bildcontent">
     		<img src="resources/bilder/6.jpg">
-    	</div>    <p  class="einbuebers"><b>Tippen</b> Sie auf <i>Zur Übersicht</i>, um die Bildansicht zu verlassen!</p><p  class="einbhoeren"><b>Hören</b> Sie eine Vertonung des P-Seminars im Player unten an!</p>
+    	</div>    <p  class="einbuebers"><b>Wischen</b> Sie nach oben oder <b>tippen</b> Sie auf <i>Zur Übersicht</i>, um die Bildansicht zu verlassen!</p><p  class="einbhoeren"><b>Hören</b> Sie eine Vertonung des P-Seminars im Player unten an!</p>
     	  	
 </div>
  
@@ -308,7 +307,7 @@ Ihr Projekt-Seminar
     	<div class="bildheader"><span class="aktiv" >Animation</span><span class="rechtsbuendig">Bild</span></div> 
     	<br/>
     	<div class="bildcontent_ggb" id="ggb06" data-param-width="50">
-    	<p style="margin: 80px; text-align: center;">Zu diesem Werk ist leider keine Animation vorhanden.</p>
+    	<p style="margin: 80px; text-align: center; padding: 10px; border: 5px solid #333;">Zu diesem Werk ist leider keine Animation vorhanden.<br><br>Tippen Sie auf <i>Bild</i>, um zurückzukehren.</p>
         </div>
 </div> 
 
@@ -318,7 +317,7 @@ Ihr Projekt-Seminar
     	<div class="bildheader"><!--<span class="linksbuendig">Animation</span>--><span class="zuruebersicht" class="aktiv" >Zur Übersicht</span><span class="rechtsbuendig">Information</span></div> 
     	<div class="bildcontent">
     		<img src="resources/bilder/7.jpg">
-    	</div>   <p  class="einbuebers"><b>Tippen</b> Sie auf <i>Zur Übersicht</i>, um die Bildansicht zu verlassen!</p><p  class="einbhoeren"><b>Hören</b> Sie eine Vertonung des P-Seminars im Player unten an!</p>
+    	</div>   <p  class="einbuebers"><b>Wischen</b> Sie nach oben oder <b>tippen</b> Sie auf <i>Zur Übersicht</i>, um die Bildansicht zu verlassen!</p><p  class="einbhoeren"><b>Hören</b> Sie eine Vertonung des P-Seminars im Player unten an!</p>
     	   	
 </div>
  
@@ -338,7 +337,7 @@ Ihr Projekt-Seminar
     	<div class="bildheader"><span class="aktiv" >Animation</span><span class="rechtsbuendig">Bild</span></div> 
     	<br/>
     	<div class="bildcontent_ggb" id="ggb07" data-param-width="50">
-    	<p style="margin: 80px; text-align: center;">Zu diesem Werk ist leider keine Animation vorhanden.</p>
+    	<p style="margin: 80px; text-align: center; padding: 10px; border: 5px solid #333;">Zu diesem Werk ist leider keine Animation vorhanden.<br><br>Tippen Sie auf <i>Bild</i>, um zurückzukehren.</p>
         </div>
 </div>
 
@@ -348,7 +347,7 @@ Ihr Projekt-Seminar
     	<div class="bildheader"><span class="linksbuendig">Animation</span><span class="zuruebersicht" class="aktiv" >Zur Übersicht</span><span class="rechtsbuendig">Information</span></div> 
     	<div class="bildcontent">
     		<img src="resources/bilder/8.jpg">
-    	</div>      <p  class="einbuebers"><b>Tippen</b> Sie auf <i>Zur Übersicht</i>, um die Bildansicht zu verlassen!</p><p  class="einbhoeren"><b>Hören</b> Sie eine Vertonung des P-Seminars im Player unten an!</p>
+    	</div>      <p  class="einbuebers"><b>Wischen</b> Sie nach oben oder <b>tippen</b> Sie auf <i>Zur Übersicht</i>, um die Bildansicht zu verlassen!</p><p  class="einbhoeren"><b>Hören</b> Sie eine Vertonung des P-Seminars im Player unten an!</p>
     		
 </div>
  
@@ -368,7 +367,7 @@ Ihr Projekt-Seminar
     	<div class="bildheader"><span class="aktiv">Animation</span><span class="rechtsbuendig">Bild</span></div> 
     	<br/>
     	<div class="bildcontent_ggb" id="ggb08" data-param-width="50">
-    	<p style="margin: 80px; text-align: center;">Zu diesem Werk ist leider keine Animation vorhanden.</p>
+    	<p style="margin: 80px; text-align: center; padding: 10px; border: 5px solid #333;">Zu diesem Werk ist leider keine Animation vorhanden.<br><br>Tippen Sie auf <i>Bild</i>, um zurückzukehren.</p>
         </div>
 </div>
 
@@ -378,7 +377,7 @@ Ihr Projekt-Seminar
     	<div class="bildheader"><!--<span class="linksbuendig">Animation</span>--><span class="zuruebersicht" class="aktiv" >Zur Übersicht</span><span class="rechtsbuendig">Information</span></div> 
     	<div class="bildcontent">
     		<img src="resources/bilder/9.jpg">
-    	</div>     <p  class="einbuebers"><b>Tippen</b> Sie auf <i>Zur Übersicht</i>, um die Bildansicht zu verlassen!</p><p  class="einbhoeren"><b>Hören</b> Sie eine Vertonung des P-Seminars im Player unten an!</p>
+    	</div>     <p  class="einbuebers"><b>Wischen</b> Sie nach oben oder <b>tippen</b> Sie auf <i>Zur Übersicht</i>, um die Bildansicht zu verlassen!</p><p  class="einbhoeren"><b>Hören</b> Sie eine Vertonung des P-Seminars im Player unten an!</p>
     	 	
 </div>
  
@@ -398,7 +397,7 @@ Ihr Projekt-Seminar
     	<div class="bildheader"><span class="aktiv" >Animation</span><span class="rechtsbuendig">Bild</span></div> 
     	<br/>
     	<div class="bildcontent_ggb" id="ggb09" data-param-width="50">
-    	<p style="margin: 80px; text-align: center;">Zu diesem Werk ist leider keine Animation vorhanden.</p>
+    	<p style="margin: 80px; text-align: center; padding: 10px; border: 5px solid #333;">Zu diesem Werk ist leider keine Animation vorhanden.<br><br>Tippen Sie auf <i>Bild</i>, um zurückzukehren.</p>
         </div>
 </div>
 
@@ -408,7 +407,7 @@ Ihr Projekt-Seminar
     	<div class="bildheader"><!-- <span class="linksbuendig">Animation</span>--><span class="zuruebersicht" class="aktiv" >Zur Übersicht</span><span class="rechtsbuendig">Information</span></div> 
     	<div class="bildcontent">
     		<img src="resources/bilder/10.jpg">
-    	</div>    <p  class="einbuebers"><b>Tippen</b> Sie auf <i>Zur Übersicht</i>, um die Bildansicht zu verlassen!</p><p  class="einbhoeren"><b>Hören</b> Sie eine Vertonung des P-Seminars im Player unten an!</p>
+    	</div>    <p  class="einbuebers"><b>Wischen</b> Sie nach oben oder <b>tippen</b> Sie auf <i>Zur Übersicht</i>, um die Bildansicht zu verlassen!</p><p  class="einbhoeren"><b>Hören</b> Sie eine Vertonung des P-Seminars im Player unten an!</p>
     	  	
 </div>
  
@@ -428,7 +427,7 @@ Ihr Projekt-Seminar
     	<div class="bildheader"><span class="aktiv" >Animation</span><span class="rechtsbuendig">Bild</span></div> 
     	<br/>
     	<div class="bildcontent_ggb" id="ggb10" data-param-width="50">
-    	<p style="margin: 80px; text-align: center;">Zu diesem Werk ist leider keine Animation vorhanden.</p>
+    	<p style="margin: 80px; text-align: center; padding: 10px; border: 5px solid #333;">Zu diesem Werk ist leider keine Animation vorhanden.<br><br>Tippen Sie auf <i>Bild</i>, um zurückzukehren.</p>
         </div>
 </div>
 
@@ -438,7 +437,7 @@ Ihr Projekt-Seminar
     	<div class="bildheader"><!-- <span class="linksbuendig">Animation</span> --><span class="zuruebersicht" class="aktiv" >Zur Übersicht</span><span class="rechtsbuendig">Information</span></div> 
     	<div class="bildcontent">
     		<img src="resources/bilder/11.jpg">
-    	</div>      	<p  class="einbuebers"><b>Tippen</b> Sie auf <i>Zur Übersicht</i>, um die Bildansicht zu verlassen!</p><p  class="einbhoeren"><b>Hören</b> Sie eine Vertonung des P-Seminars im Player unten an!</p>
+    	</div>      	<p  class="einbuebers"><b>Wischen</b> Sie nach oben oder <b>tippen</b> Sie auf <i>Zur Übersicht</i>, um die Bildansicht zu verlassen!</p><p  class="einbhoeren"><b>Hören</b> Sie eine Vertonung des P-Seminars im Player unten an!</p>
     	
 </div>
  
@@ -458,7 +457,7 @@ Ihr Projekt-Seminar
     	<div class="bildheader"><span class="aktiv" >Animation</span><span class="rechtsbuendig">Bild</span></div> 
     	<br/>
     	<div class="bildcontent_ggb" id="ggb11" data-param-width="50">
-    	<p style="margin: 80px; text-align: center;">Zu diesem Werk ist leider keine Animation vorhanden.</p>
+    	<p style="margin: 80px; text-align: center; padding: 10px; border: 5px solid #333;">Zu diesem Werk ist leider keine Animation vorhanden.<br><br>Tippen Sie auf <i>Bild</i>, um zurückzukehren.</p>
         </div>
 </div>
 
@@ -468,7 +467,7 @@ Ihr Projekt-Seminar
     	<div class="bildheader"><!--<span class="linksbuendig">Animation</span>--><span class="zuruebersicht" class="aktiv" >Zur Übersicht</span><span class="rechtsbuendig">Information</span></div> 
     	<div class="bildcontent">
     		<img src="resources/bilder/12.jpg">
-    	</div>    <p  class="einbuebers"><b>Tippen</b> Sie auf <i>Zur Übersicht</i>, um die Bildansicht zu verlassen!</p><p  class="einbhoeren"><b>Hören</b> Sie eine Vertonung des P-Seminars im Player unten an!</p>
+    	</div>    <p  class="einbuebers"><b>Wischen</b> Sie nach oben oder <b>tippen</b> Sie auf <i>Zur Übersicht</i>, um die Bildansicht zu verlassen!</p><p  class="einbhoeren"><b>Hören</b> Sie eine Vertonung des P-Seminars im Player unten an!</p>
     	  	
 </div>
  
@@ -488,7 +487,7 @@ Ihr Projekt-Seminar
     	<div class="bildheader"><span class="aktiv" >Animation</span><span class="rechtsbuendig">Bild</span></div> 
     	<br/>
     	<div class="bildcontent_ggb" id="ggb12" data-param-width="50">
-    	<p style="margin: 80px; text-align: center;">Zu diesem Werk ist leider keine Animation vorhanden.</p>
+    	<p style="margin: 80px; text-align: center; padding: 10px; border: 5px solid #333;">Zu diesem Werk ist leider keine Animation vorhanden.<br><br>Tippen Sie auf <i>Bild</i>, um zurückzukehren.</p>
         </div>
 </div> 
  
@@ -498,7 +497,7 @@ Ihr Projekt-Seminar
     	<div class="bildheader"><!-- <span class="linksbuendig">Animation</span> --><span class="zuruebersicht" class="aktiv" >Zur Übersicht</span><span class="rechtsbuendig">Information</span></div> 
     	<div class="bildcontent">
     		<img src="resources/bilder/13.jpg">
-    	</div>    <p  class="einbuebers"><b>Tippen</b> Sie auf <i>Zur Übersicht</i>, um die Bildansicht zu verlassen!</p><p  class="einbhoeren"><b>Hören</b> Sie eine Vertonung des P-Seminars im Player unten an!</p>
+    	</div>    <p  class="einbuebers"><b>Wischen</b> Sie nach oben oder <b>tippen</b> Sie auf <i>Zur Übersicht</i>, um die Bildansicht zu verlassen!</p><p  class="einbhoeren"><b>Hören</b> Sie eine Vertonung des P-Seminars im Player unten an!</p>
     	  	
 </div>
  
@@ -518,7 +517,7 @@ Ihr Projekt-Seminar
     	<div class="bildheader"><span class="aktiv">Animation</span><span class="rechtsbuendig">Bild</span></div> 
     	<br/>
     	<div class="bildcontent_ggb" id="ggb13" data-param-width="50">
-    	<p style="margin: 80px; text-align: center;">Zu diesem Werk ist leider keine Animation vorhanden.</p>
+    	<p style="margin: 80px; text-align: center; padding: 10px; border: 5px solid #333;">Zu diesem Werk ist leider keine Animation vorhanden.<br><br>Tippen Sie auf <i>Bild</i>, um zurückzukehren.</p>
         </div>
 </div> 
 <!-- Bild 14 -->
@@ -527,7 +526,7 @@ Ihr Projekt-Seminar
     	<div class="bildheader"><!--<span class="linksbuendig">Animation</span>--><span class="zuruebersicht" class="aktiv" >Zur Übersicht</span><span class="rechtsbuendig">Information</span></div> 
     	<div class="bildcontent">
     		<img src="resources/bilder/14.jpg">
-    	</div>     <p  class="einbuebers"><b>Tippen</b> Sie auf <i>Zur Übersicht</i>, um die Bildansicht zu verlassen!</p><p  class="einbhoeren"><b>Hören</b> Sie eine Vertonung des P-Seminars im Player unten an!</p>
+    	</div>     <p  class="einbuebers"><b>Wischen</b> Sie nach oben oder <b>tippen</b> Sie auf <i>Zur Übersicht</i>, um die Bildansicht zu verlassen!</p><p  class="einbhoeren"><b>Hören</b> Sie eine Vertonung des P-Seminars im Player unten an!</p>
     	 	
 </div>
  
@@ -547,7 +546,7 @@ Ihr Projekt-Seminar
     	<div class="bildheader"><span class="aktiv">Animation</span><span class="rechtsbuendig">Bild</span></div> 
     	<br/>
     	<div class="bildcontent_ggb" id="ggb14" data-param-width="50">
-    	<p style="margin: 80px; text-align: center;">Zu diesem Werk ist leider keine Animation vorhanden.</p>
+    	<p style="margin: 80px; text-align: center; padding: 10px; border: 5px solid #333;">Zu diesem Werk ist leider keine Animation vorhanden.<br><br>Tippen Sie auf <i>Bild</i>, um zurückzukehren.</p>
         </div>
 </div> 
 <!-- Bild 15 -->
@@ -556,7 +555,7 @@ Ihr Projekt-Seminar
     	<div class="bildheader"><!--<span class="linksbuendig">Animation</span>--><span class="zuruebersicht" class="aktiv" >Zur Übersicht</span><span class="rechtsbuendig">Information</span></div> 
     	<div class="bildcontent">
     		<img src="resources/bilder/15.jpg">
-    	</div>     <p  class="einbuebers"><b>Tippen</b> Sie auf <i>Zur Übersicht</i>, um die Bildansicht zu verlassen!</p><p  class="einbhoeren"><b>Hören</b> Sie eine Vertonung des P-Seminars im Player unten an!</p>
+    	</div>     <p  class="einbuebers"><b>Wischen</b> Sie nach oben oder <b>tippen</b> Sie auf <i>Zur Übersicht</i>, um die Bildansicht zu verlassen!</p><p  class="einbhoeren"><b>Hören</b> Sie eine Vertonung des P-Seminars im Player unten an!</p>
     	 	
 </div>
  
@@ -576,7 +575,7 @@ Ihr Projekt-Seminar
     	<div class="bildheader"><span class="aktiv">Animation</span><span class="rechtsbuendig">Bild</span></div> 
     	<br/>
     	<div class="bildcontent_ggb" id="ggb15" data-param-width="50">
-    	<p style="margin: 80px; text-align: center;">Zu diesem Werk ist leider keine Animation vorhanden.</p>
+    	<p style="margin: 80px; text-align: center; padding: 10px; border: 5px solid #333;">Zu diesem Werk ist leider keine Animation vorhanden.<br><br>Tippen Sie auf <i>Bild</i>, um zurückzukehren.</p>
         </div>
 </div> 
 <!-- Bild 16 -->
@@ -585,7 +584,7 @@ Ihr Projekt-Seminar
     	<div class="bildheader"><span class="linksbuendig">Animation</span><span class="zuruebersicht" class="aktiv" >Zur Übersicht</span><span class="rechtsbuendig">Information</span></div> 
     	<div class="bildcontent">
     		<img src="resources/bilder/16.jpg">
-    	</div>     <p  class="einbuebers"><b>Tippen</b> Sie auf <i>Zur Übersicht</i>, um die Bildansicht zu verlassen!</p><p  class="einbhoeren"><b>Hören</b> Sie eine Vertonung des P-Seminars im Player unten an!</p>
+    	</div>     <p  class="einbuebers"><b>Wischen</b> Sie nach oben oder <b>tippen</b> Sie auf <i>Zur Übersicht</i>, um die Bildansicht zu verlassen!</p><p  class="einbhoeren"><b>Hören</b> Sie eine Vertonung des P-Seminars im Player unten an!</p>
     	 	
 </div>
  
@@ -605,7 +604,7 @@ Ihr Projekt-Seminar
     	<div class="bildheader"><span class="aktiv">Animation</span><span class="rechtsbuendig">Bild</span></div> 
     	<br/>
     	<div class="bildcontent_ggb" id="ggb16" data-param-width="50">
-    	<p style="margin: 80px; text-align: center;">Zu diesem Werk ist leider keine Animation vorhanden.</p>
+    	<p style="margin: 80px; text-align: center; padding: 10px; border: 5px solid #333;">Zu diesem Werk ist leider keine Animation vorhanden.<br><br>Tippen Sie auf <i>Bild</i>, um zurückzukehren.</p>
         </div>
 </div> 
 <!-- Bild 17 -->
@@ -614,7 +613,7 @@ Ihr Projekt-Seminar
     	<div class="bildheader"><!--<span class="linksbuendig">Animation</span>--><span class="zuruebersicht" class="aktiv" >Zur Übersicht</span><span class="rechtsbuendig">Information</span></div> 
     	<div class="bildcontent">
     		<img src="resources/bilder/17.jpg">
-    	</div>    <p  class="einbuebers"><b>Tippen</b> Sie auf <i>Zur Übersicht</i>, um die Bildansicht zu verlassen!</p><p  class="einbhoeren"><b>Hören</b> Sie eine Vertonung des P-Seminars im Player unten an!</p>
+    	</div>    <p  class="einbuebers"><b>Wischen</b> Sie nach oben oder <b>tippen</b> Sie auf <i>Zur Übersicht</i>, um die Bildansicht zu verlassen!</p><p  class="einbhoeren"><b>Hören</b> Sie eine Vertonung des P-Seminars im Player unten an!</p>
     	  	
 </div>
  
@@ -634,7 +633,7 @@ Ihr Projekt-Seminar
     	<div class="bildheader"><span class="aktiv">Animation</span><span class="rechtsbuendig">Bild</span></div> 
     	<br/>
     	<div class="bildcontent_ggb" id="ggb17" data-param-width="50">
-    	<p style="margin: 80px; text-align: center;">Zu diesem Werk ist leider keine Animation vorhanden.</p>
+    	<p style="margin: 80px; text-align: center; padding: 10px; border: 5px solid #333;">Zu diesem Werk ist leider keine Animation vorhanden.<br><br>Tippen Sie auf <i>Bild</i>, um zurückzukehren.</p>
         </div>
 </div> 
 <!-- Bild 18 -->
@@ -643,7 +642,7 @@ Ihr Projekt-Seminar
     	<div class="bildheader"><span class="linksbuendig">Animation</span><span class="zuruebersicht" class="aktiv" >Zur Übersicht</span><span class="rechtsbuendig">Information</span></div> 
     	<div class="bildcontent">
     		<img src="resources/bilder/18.jpg">
-    	</div>     <p  class="einbuebers"><b>Tippen</b> Sie auf <i>Zur Übersicht</i>, um die Bildansicht zu verlassen!</p><p  class="einbhoeren"><b>Hören</b> Sie eine Vertonung des P-Seminars im Player unten an!</p>
+    	</div>     <p  class="einbuebers"><b>Wischen</b> Sie nach oben oder <b>tippen</b> Sie auf <i>Zur Übersicht</i>, um die Bildansicht zu verlassen!</p><p  class="einbhoeren"><b>Hören</b> Sie eine Vertonung des P-Seminars im Player unten an!</p>
     	 	
 </div>
  
@@ -663,7 +662,7 @@ Ihr Projekt-Seminar
     	<div class="bildheader"><span class="aktiv">Animation</span><span class="rechtsbuendig">Bild</span></div> 
     	<br/>
     	<div class="bildcontent_ggb" id="ggb18" data-param-width="50">
-    	<p style="margin: 80px; text-align: center;">Zu diesem Werk ist leider keine Animation vorhanden.</p>
+    	<p style="margin: 80px; text-align: center; padding: 10px; border: 5px solid #333;">Zu diesem Werk ist leider keine Animation vorhanden.<br><br>Tippen Sie auf <i>Bild</i>, um zurückzukehren.</p>
         </div>
 </div> 
 <!-- Bild 19 -->
@@ -672,7 +671,7 @@ Ihr Projekt-Seminar
     	<div class="bildheader"><!--<span class="linksbuendig">Animation</span>--><span class="zuruebersicht" class="aktiv" >Zur Übersicht</span><span class="rechtsbuendig">Information</span></div> 
     	<div class="bildcontent">
     		<img src="resources/bilder/19.jpg">
-    	</div>     <p  class="einbuebers"><b>Tippen</b> Sie auf <i>Zur Übersicht</i>, um die Bildansicht zu verlassen!</p><p  class="einbhoeren"><b>Hören</b> Sie eine Vertonung des P-Seminars im Player unten an!</p>
+    	</div>     <p  class="einbuebers"><b>Wischen</b> Sie nach oben oder <b>tippen</b> Sie auf <i>Zur Übersicht</i>, um die Bildansicht zu verlassen!</p><p  class="einbhoeren"><b>Hören</b> Sie eine Vertonung des P-Seminars im Player unten an!</p>
     	 	
 </div>
  
@@ -692,7 +691,7 @@ Ihr Projekt-Seminar
     	<div class="bildheader"><span class="aktiv">Animation</span><span class="rechtsbuendig">Bild</span></div> 
     	<br/>
     	<div class="bildcontent_ggb" id="ggb19" data-param-width="50">
-    	<p style="margin: 80px; text-align: center;">Zu diesem Werk ist leider keine Animation vorhanden.</p>
+    	<p style="margin: 80px; text-align: center; padding: 10px; border: 5px solid #333;">Zu diesem Werk ist leider keine Animation vorhanden.<br><br>Tippen Sie auf <i>Bild</i>, um zurückzukehren.</p>
         </div>
 </div> 
 <!-- Bild 20 -->
@@ -701,7 +700,7 @@ Ihr Projekt-Seminar
     	<div class="bildheader"> <!-- <span class="linksbuendig">Animation</span> --><span class="zuruebersicht" class="aktiv" >Zur Übersicht</span><span class="rechtsbuendig">Information</span></div> 
     	<div class="bildcontent">
     		<img src="resources/bilder/20.jpg">
-    	</div>    <p  class="einbuebers"><b>Tippen</b> Sie auf <i>Zur Übersicht</i>, um die Bildansicht zu verlassen!</p><p  class="einbhoeren"><b>Hören</b> Sie eine Vertonung des P-Seminars im Player unten an!</p>
+    	</div>    <p  class="einbuebers"><b>Wischen</b> Sie nach oben oder <b>tippen</b> Sie auf <i>Zur Übersicht</i>, um die Bildansicht zu verlassen!</p><p  class="einbhoeren"><b>Hören</b> Sie eine Vertonung des P-Seminars im Player unten an!</p>
     	  	
 </div>
  
@@ -721,7 +720,7 @@ Ihr Projekt-Seminar
     	<div class="bildheader"><span class="aktiv">Animation</span><span class="rechtsbuendig">Bild</span></div> 
     	<br/>
     	<div class="bildcontent_ggb" id="ggb20" data-param-width="50">
-    	<p style="margin: 80px; text-align: center;">Zu diesem Werk ist leider keine Animation vorhanden.</p>
+    	<p style="margin: 80px; text-align: center; padding: 10px; border: 5px solid #333;">Zu diesem Werk ist leider keine Animation vorhanden.<br><br>Tippen Sie auf <i>Bild</i>, um zurückzukehren.</p>
         </div>
 </div> 
 <!-- Bild 21 -->
@@ -730,7 +729,7 @@ Ihr Projekt-Seminar
     	<div class="bildheader"><span class="linksbuendig">Animation</span><span class="zuruebersicht" class="aktiv" >Zur Übersicht</span><span class="rechtsbuendig">Information</span></div> 
     	<div class="bildcontent">
     		<img src="resources/bilder/21.jpg">
-    	</div>     <p  class="einbuebers"><b>Tippen</b> Sie auf <i>Zur Übersicht</i>, um die Bildansicht zu verlassen!</p><p  class="einbhoeren"><b>Hören</b> Sie eine Vertonung des P-Seminars im Player unten an!</p>
+    	</div>     <p  class="einbuebers"><b>Wischen</b> Sie nach oben oder <b>tippen</b> Sie auf <i>Zur Übersicht</i>, um die Bildansicht zu verlassen!</p><p  class="einbhoeren"><b>Hören</b> Sie eine Vertonung des P-Seminars im Player unten an!</p>
     	 	
 </div>
  
@@ -750,7 +749,7 @@ Ihr Projekt-Seminar
     	<div class="bildheader"><span class="aktiv">Animation</span><span class="rechtsbuendig">Bild</span></div> 
     	<br/>
     	<div class="bildcontent_ggb" id="ggb21" data-param-width="50">
-    	<p style="margin: 80px; text-align: center;">Zu diesem Werk ist leider keine Animation vorhanden.</p>
+    	<p style="margin: 80px; text-align: center; padding: 10px; border: 5px solid #333;">Zu diesem Werk ist leider keine Animation vorhanden.<br><br>Tippen Sie auf <i>Bild</i>, um zurückzukehren.</p>
         </div>
 </div> 
 <!-- Bild 22 -->
@@ -759,7 +758,7 @@ Ihr Projekt-Seminar
     	<div class="bildheader"><span class="linksbuendig">Animation</span><span class="zuruebersicht" class="aktiv" >Zur Übersicht</span><span class="rechtsbuendig">Information</span></div> 
     	<div class="bildcontent">
     		<img src="resources/bilder/22.jpg">
-    	</div>      <p  class="einbuebers"><b>Tippen</b> Sie auf <i>Zur Übersicht</i>, um die Bildansicht zu verlassen!</p><p  class="einbhoeren"><b>Hören</b> Sie eine Vertonung des P-Seminars im Player unten an!</p>
+    	</div>      <p  class="einbuebers"><b>Wischen</b> Sie nach oben oder <b>tippen</b> Sie auf <i>Zur Übersicht</i>, um die Bildansicht zu verlassen!</p><p  class="einbhoeren"><b>Hören</b> Sie eine Vertonung des P-Seminars im Player unten an!</p>
     		
 </div>
  
@@ -779,7 +778,7 @@ Ihr Projekt-Seminar
     	<div class="bildheader"><span class="aktiv">Animation</span><span class="rechtsbuendig">Bild</span></div> 
     	<br/>
     	<div class="bildcontent_ggb" id="ggb22" data-param-width="50">
-    	<p style="margin: 80px; text-align: center;">Zu diesem Werk ist leider keine Animation vorhanden.</p>
+    	<p style="margin: 80px; text-align: center; padding: 10px; border: 5px solid #333;">Zu diesem Werk ist leider keine Animation vorhanden.<br><br>Tippen Sie auf <i>Bild</i>, um zurückzukehren.</p>
         </div>
 </div> 
 <!-- Bild 23 -->
@@ -788,7 +787,7 @@ Ihr Projekt-Seminar
     	<div class="bildheader"><span class="linksbuendig">Animation</span><span class="zuruebersicht" class="aktiv" >Zur Übersicht</span><span class="rechtsbuendig">Information</span></div> 
     	<div class="bildcontent">
     		<img src="resources/bilder/23.jpg">
-    	</div>     <p  class="einbuebers"><b>Tippen</b> Sie auf <i>Zur Übersicht</i>, um die Bildansicht zu verlassen!</p><p  class="einbhoeren"><b>Hören</b> Sie eine Vertonung des P-Seminars im Player unten an!</p>
+    	</div>     <p  class="einbuebers"><b>Wischen</b> Sie nach oben oder <b>tippen</b> Sie auf <i>Zur Übersicht</i>, um die Bildansicht zu verlassen!</p><p  class="einbhoeren"><b>Hören</b> Sie eine Vertonung des P-Seminars im Player unten an!</p>
     	 	
 </div>
  
@@ -808,7 +807,7 @@ Ihr Projekt-Seminar
     	<div class="bildheader"><span class="aktiv">Animation</span><span class="rechtsbuendig">Bild</span></div> 
     	<br/>
     	<div class="bildcontent_ggb" id="ggb23" data-param-width="50">
-    	<p style="margin: 80px; text-align: center;">Zu diesem Werk ist leider keine Animation vorhanden.</p>
+    	<p style="margin: 80px; text-align: center; padding: 10px; border: 5px solid #333;">Zu diesem Werk ist leider keine Animation vorhanden.<br><br>Tippen Sie auf <i>Bild</i>, um zurückzukehren.</p>
         </div>
 </div> 
 <!-- Bild 24 -->
@@ -817,7 +816,7 @@ Ihr Projekt-Seminar
     	<div class="bildheader"><!-- <span class="linksbuendig">Animation</span> --><span class="zuruebersicht" class="aktiv" >Zur Übersicht</span><span class="rechtsbuendig">Information</span></div> 
     	<div class="bildcontent">
     		<img src="resources/bilder/24.jpg">
-    	</div>     <p  class="einbuebers"><b>Tippen</b> Sie auf <i>Zur Übersicht</i>, um die Bildansicht zu verlassen!</p><p  class="einbhoeren"><b>Hören</b> Sie eine Vertonung des P-Seminars im Player unten an!</p>
+    	</div>     <p  class="einbuebers"><b>Wischen</b> Sie nach oben oder <b>tippen</b> Sie auf <i>Zur Übersicht</i>, um die Bildansicht zu verlassen!</p><p  class="einbhoeren"><b>Hören</b> Sie eine Vertonung des P-Seminars im Player unten an!</p>
     	 	
 </div>
  
@@ -837,7 +836,7 @@ Ihr Projekt-Seminar
     	<div class="bildheader"><span class="aktiv">Animation</span><span class="rechtsbuendig">Bild</span></div> 
     	<br/>
     	<div class="bildcontent_ggb" id="ggb24" data-param-width="50">
-    	<p style="margin: 80px; text-align: center;">Zu diesem Werk ist leider keine Animation vorhanden.</p>
+    	<p style="margin: 80px; text-align: center; padding: 10px; border: 5px solid #333;">Zu diesem Werk ist leider keine Animation vorhanden.<br><br>Tippen Sie auf <i>Bild</i>, um zurückzukehren.</p>
         </div>
 </div> 
 <!-- Bild 25 -->
@@ -846,7 +845,7 @@ Ihr Projekt-Seminar
     	<div class="bildheader"><!-- <span class="linksbuendig">Animation</span> --><span class="zuruebersicht">Zur Übersicht</span><span class="rechtsbuendig">Information</span></div> 
     	<div class="bildcontent">
     		<img src="resources/bilder/25.jpg">
-    	</div>      <p  class="einbuebers"><b>Tippen</b> Sie auf <i>Zur Übersicht</i>, um die Bildansicht zu verlassen!</p><p  class="einbhoeren"><b>Hören</b> Sie eine Vertonung des P-Seminars im Player unten an!</p>
+    	</div>      <p  class="einbuebers"><b>Wischen</b> Sie nach oben oder <b>tippen</b> Sie auf <i>Zur Übersicht</i>, um die Bildansicht zu verlassen!</p><p  class="einbhoeren"><b>Hören</b> Sie eine Vertonung des P-Seminars im Player unten an!</p>
     		
 </div>
  
@@ -866,7 +865,7 @@ Ihr Projekt-Seminar
     	<div class="bildheader"><span class="aktiv">Animation</span><span class="rechtsbuendig">Bild</span></div> 
     	<br/>
     	<div class="bildcontent_ggb" id="ggb25" data-param-width="50">
-    	<p style="margin: 80px; text-align: center;">Zu diesem Werk ist leider keine Animation vorhanden.</p>
+    	<p style="margin: 80px; text-align: center; padding: 10px; border: 5px solid #333;">Zu diesem Werk ist leider keine Animation vorhanden.<br><br>Tippen Sie auf <i>Bild</i>, um zurückzukehren.</p>
         </div>
 </div> 
 <!-- Footer -->

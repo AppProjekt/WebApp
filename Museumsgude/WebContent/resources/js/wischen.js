@@ -174,7 +174,7 @@ $(".bildc .bildheader").live("swipeleft", function(){
 
         var nextpage = $(A);
         $.mobile.changePage(nextpage, 'pop');
-        $('.bildcontent_ggb').html('<p style="margin: 80px; text-align: center;">Zu diesem Werk ist leider keine Animation vorhanden.</p>');
+        $('.bildcontent_ggb').html('<p style="margin: 80px; text-align: center; padding: 10px; border: 5px solid #333;">Zu diesem Werk ist leider keine Animation vorhanden.<br><br>Tippen Sie auf <i>Bild</i>, um zur&uuml;ckzukehren.</p>');
 
       });
 $('.bildc').live('pagecreate', function(r){
@@ -185,7 +185,7 @@ $('.bildc').live('pagecreate', function(r){
 		var A = "#" + clickBildnr + "a";
 	        var nextpage = $(A);
 	        $.mobile.changePage(nextpage, 'pop');
-	        $('.bildcontent_ggb').html('<p style="margin: 80px; text-align: center;">Zu diesem Werk ist leider keine Animation vorhanden.</p>');
+	        $('.bildcontent_ggb').html('<p style="margin: 80px; text-align: center; padding: 10px; border: 5px solid #333;">Zu diesem Werk ist leider keine Animation vorhanden.<br><br>Tippen Sie auf <i>Bild</i>, um zur&uuml;ckzukehren.</p>');
 	        
 	});
 });
@@ -197,6 +197,11 @@ $('.bilda').live('pagecreate', function(e){
 		$('.textfeld').html("");
 		$('.speicher').html("");
 	});
+});
+$('.bilda').live('swipedown', function() {
+	$.mobile.changePage('#indexa', 'pop');
+	$('.textfeld').html("");
+	$('.speicher').html("");
 });
 
 /*Mediaplayer erst nach erstem Bildaufruf anzeigen*/
