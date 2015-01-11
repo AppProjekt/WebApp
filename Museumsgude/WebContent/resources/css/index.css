@@ -110,6 +110,9 @@ body .indexpage .indexcontent {
 	line-height: 1.4em;
 	font-family: Calibri;
 }
+.indexcontent img {
+	width: 100%;
+}
 body .indexpage .container_new  {
 	margin: 50px auto 85px auto;
 }
