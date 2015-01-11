@@ -113,7 +113,15 @@ body .indexpage .indexcontent {
 	line-height: 1.4em;
 	font-family: Calibri;
 }
-.indexcontent img {
+.indexcontent table td#bilder {
+	width: 20%;
+} 
+img.logos {
+	width: 30%;
+	margin: auto 1% auto 1%;
+	vertical-align: middle;
+}
+.indexcontent img#seminar {
 	width: 100%;
 }
 body .indexpage .container_new  {
