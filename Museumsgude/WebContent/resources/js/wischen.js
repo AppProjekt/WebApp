@@ -39,10 +39,15 @@ $(function() {
 });
 $(function() {
 	
-	var calcleftInnerwidth = screen.width;
+	var calcleftInnerwidth = $(document).width();
 	var calcleft = calcleftInnerwidth / 2 - 65;
 	$('span.aktiv').css('left', calcleft + 'px');
 	$('span.zuruebersicht').css('left', calcleft + 'px');
+	
+	var bildaheight = screen.availHeight;
+	var bildaimgheight = bildaheight * 0.7;
+	var bildaimgleft = (calcleftInnerwidth / 2) - (bildaimgheight / 2);
+	$('.bildcontent > img').css('left', bildaimgleft + 'px');
 });
 /*Anfang Index*/
 /*==Auf Seite A==*/
@@ -134,7 +139,6 @@ $('.bilda').live("swiperight", function(){
       });
 $('.bilda').live('pagecreate', function(r){
 	$(".bilda > div.bildheader > span.linksbuendig").click(function(r) {
-		 $('.bilda').die('pagecreate');
 		var clickHash = window.location.hash;
 		var clickBildnr = clickHash.replace(/\D+/g,"");
 		var ggbQuelle = "resources/animationVideo/" + clickBildnr + ".html";
@@ -144,6 +148,7 @@ $('.bilda').live('pagecreate', function(r){
 	        $.mobile.changePage(prevpage, 'pop');
 	        $(ggbZiel).load(ggbQuelle);
 	});
+	$('.bilda').die('pagecreate');
 });
 /*==Auf Seite B==*/
 
@@ -198,11 +203,19 @@ $('.bilda').live('pagecreate', function(e){
 		$('.speicher').html("");
 	});
 });
-$('.bilda').live('swipedown', function() {
-	$.mobile.changePage('#indexa', 'pop');
-	$('.textfeld').html("");
-	$('.speicher').html("");
-});
+$('.bilda').live('pagecreate', function(){
+	$('.bilda').on('swipedown', function() {
+		$.mobile.changePage('#indexa', 'pop');
+		$('.textfeld').html("");
+		$('.speicher').html("");
+	});
+	$('.bilda').on('swipeup', function() {
+		$.mobile.changePage('#indexa', 'pop');
+		$('.textfeld').html("");
+		$('.speicher').html("");
+	});
+
+	});
 
 /*Mediaplayer erst nach erstem Bildaufruf anzeigen*/
 $('body #indexa').live('pagecreate', function (g) {

@@ -1,7 +1,7 @@
 ﻿<audio class="textaudio" controls><source src="resources/texte/audio/01.mp3" type='audio/mpeg'></audio>
 <b>Bridget Riley</b>
 • *1931
-• Arbeitsweise: Schwingungs- und Virationseffekte
+• Arbeitsweise: Schwingungs- und Vibrationseffekte
 • Gilt als wichtige Op-Art- Vertreterin
 • Künstlerische Wurzeln: Interesse an der Natur, Impressionismus und Pointillismus
 
@@ -10,5 +10,3 @@
 • Chinesischer Titel weist auf Rileys Affinität zu fernöstlicher Philosophie hin
 
 <b>Vertonung</b> von Alisa Thoma
-
-

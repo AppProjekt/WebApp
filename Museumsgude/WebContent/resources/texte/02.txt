@@ -1,16 +1,16 @@
 ﻿<audio class="textaudio" controls><source src="resources/texte/audio/02.mp3" type='audio/mpeg'></audio>
 <b>Jan Schoonhoven</b>
 • Zeichner und Reliefmacher
-• *26. Juni 1914 Delf, Holland
+• *26. Juni 1914 Delft, Holland
 • Vater: Fayence-Maler
 • mit 13 Jahren erster Zeichenunterricht bei einem Maler
 • Wunsch, Zeichenlehrer an Akademie in Den Haag zu werden
 • 1930-1934 Ausbildung an Kunstakademie, anschließend Arbeit als Künstler
 • 1946-1979 Postangestellter in Den Haag (Interpretation eines Bekannten: weiße Kästchen der Reliefs als Metapher des allgegenwärtigen Büros, als Quadratur der "verwaltenden Welt")
-• 1958-1960 Informelle Gruppe (5 Künstler) -> nicht-geometrische, gegenstandslose Kunst (Formlosigkeit)
-• 1960-1965 Nullgruppe (-> Nullpunkt = Künstlerischer Neuanfang > ZERO): "Malen des Lichts", dynamische Lichteffekte
+• 1958-1960 Niederländische informelle Gruppe (5 Künstler) -> nicht-geometrische, gegenstandslose Kunst (Formlosigkeit)
+• 1960-1965 <i>Gruppe Nul</i> (-> Nullpunkt = Künstlerischer Neuanfang > ZERO): "Malen des Lichts", dynamische Lichteffekte
 • insgesamt 600 Reliefs erstellt (mehr Reliefs als Zeichnungen)
-• Sinn hinter den Reliefs: "Ordnung des ästhetischem Gefühls, nichts weiter"
+• Sinn hinter den Reliefs: "Ordnung des ästhetischen Gefühls, nichts weiter"
 
 <b>Relief R69-14</b>
 • 36 Quadrate
