@@ -63,11 +63,10 @@ body .indexpage .indexheader span {
 	cursor: default;
 	border-bottom: 1px solid #333;
 	border-top: 1px solid #333;
-	width: 130px;
-	position: absolute;
-	left: calc(50% - 65px);
-	top: 10px;
+	position: static;
+	margin-top: 10px;
 	z-index: 1;
+	padding: 5px 30px;
 }
 .indexpage .indexheader .linksbuendig {
 	position: fixed;;
@@ -162,9 +161,7 @@ body .indexpage .indexcontent #einfuehrung {
 	Anfang Bilder
 		====================*/
 
-body .bilda,
-body .bildb,
-body .bildc {
+.bilda {
 	width: 100%;
 	height: 100%;
 }
@@ -193,7 +190,6 @@ body .bildc .bildheader {
 
 .bildheader span {
 	display: inline-block;
-	/*margin: 10px 0 5px 0;*/
 	padding: 5px 20px 5px 20px;
 	cursor: default;
 	background: white;
@@ -207,26 +203,23 @@ body .bildc .bildheader {
 	cursor: default;
 	border-bottom: 1px solid #333;
 	border-top: 1px solid #333;
-	width: 130px;
-	position: absolute;
-	left: calc(50% - 65px);
-	top: 10px;
+	position: static;
+	margin-top: 10px;
+	z-index: 1;
+	padding: 5px 30px;
 }
 .bildheader .linksbuendig {
 	position: fixed;
 	left: 20px;
 	top: 10px;
 	cursor: pointer;
-	/*margin-left: 20px;*/
 }
 
 .bildheader .rechtsbuendig {
-	/*float: right;*/
 	position: fixed;
 	right: 20px;
 	top: 10px;
 	cursor: pointer;
-	/*margin-right: 20px;*/
 }
 @media screen and (max-width: 960px) {
 	.bildheader .linksbuendig {
@@ -237,18 +230,13 @@ body .bildc .bildheader {
 	}
 }
 .bildheader .zuruebersicht {
-	/*background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0,#ccc),color-stop(1,#fff));
-	background-color: #ccc;/*/
-	/*padding: 5px 20px 10px 20px;*/
-	position: fixed;
-	width: 130px;
-	display: inline-block;
 	font-size: 16px;
 	font-weight: bold;
 	cursor: pointer;
-	position: absolute;
-	left: calc(50% - 65px);
-	top: 10px;
+	display: inline-block;
+	position: static;
+	margin-top: 10px;
+	z-index: 1;
 }
 
 
@@ -265,16 +253,17 @@ body div .bildcontent {
 	margin-left: -500px;
 	z-index: 5;
 	color: #eee;
-	background-color: #bbb;
 	/*font-weight: normal;
 	font-size: 15px;
 	font-family: Calibri;
-	text-shadow: 0 0 0;
-	text-align: center; */
-	max-width: 100%;
-	max-height: 100%;
+	text-shadow: 0 0 0;*/
+	text-align: center;
+	position: fixed;
+	top: 15%;
+	left: 10%;
+	width: 80%;
+	height: 70%;
 	list-style: none;
-	margin: 70px auto;/*abstand oben*/
 	padding: 0;
 }
 
@@ -285,15 +274,11 @@ body div .bildcontent {
 }
 
 body .bilda .bildcontent img {
-	/*max-width: 1000px;
-	max-height: 500px;*/	
 	outline: none;
 	border: none;
-	display: block;
-	position: fixed;
-	top: 70px;
-	/*left: 25%;*/
-	height: 70%;
+	display: inline-block;
+	max-height: 100%;
+	max-width: 100%;
 }
 
 /*===content Text zum Bild===*/
@@ -363,7 +348,7 @@ body .bildb .bildcontent_text audio.textaudio {
 /*======================
 	Breiteanpassung ein Bild
 		======================*/
-
+/*
 @media screen and (min-width: 960px) {
 	body .bilda .bildcontent {
 		max-width: 30%;
@@ -388,7 +373,7 @@ body .bildb .bildcontent_text audio.textaudio {
 		margin: 70px auto;		
 	}
 }
-
+*/
 /*======================
 	Breiteanpassung Text zum Bild
 		======================*/

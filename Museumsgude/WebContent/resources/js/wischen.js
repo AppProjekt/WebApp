@@ -24,6 +24,7 @@ $('.einbuebers').live('click', function() {
 $('.zuruebersicht').live('click', function() {
 	$('.einbuebers').css('display', 'none');
 });
+//Auch Zeilen 199 und 205
 
 $('.einbhoeren').live('click', function() {
 	$('.einbhoeren').css('display', 'none');
@@ -36,18 +37,6 @@ $(function() {
 	var spanbreite = $('.uebersichtsspan').css('width');
 	$('.uebersichtsspan').css('height', spanbreite);
 	$('.uebersichtsspan').css('background-size', '100% 100%');
-});
-$(function() {
-	
-	var calcleftInnerwidth = $(document).width();
-	var calcleft = calcleftInnerwidth / 2 - 65;
-	$('span.aktiv').css('left', calcleft + 'px');
-	$('span.zuruebersicht').css('left', calcleft + 'px');
-	
-	var bildaheight = screen.availHeight;
-	var bildaimgheight = bildaheight * 0.7;
-	var bildaimgleft = (calcleftInnerwidth / 2) - (bildaimgheight / 2);
-	$('.bildcontent > img').css('left', bildaimgleft + 'px');
 });
 /*Anfang Index*/
 /*==Auf Seite A==*/
@@ -208,11 +197,13 @@ $('.bilda').live('pagecreate', function(){
 		$.mobile.changePage('#indexa', 'pop');
 		$('.textfeld').html("");
 		$('.speicher').html("");
+		$('.einbuebers').css('display', 'none');
 	});
 	$('.bilda').on('swipeup', function() {
 		$.mobile.changePage('#indexa', 'pop');
 		$('.textfeld').html("");
 		$('.speicher').html("");
+		$('.einbuebers').css('display', 'none');
 	});
 
 	});
