@@ -30,7 +30,7 @@ div.jp-video {
 	background: rgba(238, 238, 238, .7);
 }
 div.jp-audio {
-	width: calc(100% - 80px);
+	/*width: calc(100% - 80px);*/
 	margin-left: 80px;
 	height: 100%;
 }
@@ -79,7 +79,7 @@ div.jp-video-full div.jp-interface {
 }
 
 div.jp-interface {
-	margin-left: calc(50% - 200px);
+	/*margin-left: calc(50% - 200px);*/
 	position: relative;
 	background: transparent;
 	width:100%;

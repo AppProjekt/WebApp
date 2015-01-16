@@ -17,7 +17,7 @@ $('audio').live('click', function() {
 $('.einbtippen').live('click', function() {
 	$('.einbtippen').css('display', 'none');
 });
-$('.uebersichtsspan').live('click', function() {
+$('#grid > li').live('click', function() {
 	$('.einbtippen').css('display', 'none');
 });
 
@@ -35,12 +35,16 @@ $('.einbhoeren').live('click', function() {
 $('#TrackwahlPlay').live('click', function() {
 	$('.einbhoeren').css('display', 'none');
 });
+
+function einbggb () {
+	$('.einbggb').css('display', 'none');
+};
 //=================
-$(function() {
-	var spanbreite = $('.uebersichtsspan').css('width');
-	$('.uebersichtsspan').css('height', spanbreite);
-	$('.uebersichtsspan').css('background-size', '100% 100%');
-});
+//$(function() {
+	//var spanbreite = $('.uebersichtsspan').css('width');
+	//$('.uebersichtsspan').css('height', spanbreite);
+	//$('.uebersichtsspan').css('background-size', '100% 100%');
+//});
 /*Anfang Index*/
 /*==Auf Seite A==*/
 $('body #indexa').live("swipeleft", function(){
@@ -93,8 +97,11 @@ function Bildnummer () {
 	ggbQuelle = "resources/animationVideo/" + Bildnr + ".html";
 	ggbZiel = "#ggb" + Bildnr;
 };
-$('.uebersichtsspan').live('click', function() {
+$('#grid > li').live('click', function() {
 	setTimeout(Bildnummer, 500);
+	setTimeout(Bildnummer, 2000);
+	setTimeout(Text, 3000);
+	setTimeout(Bildnummer, 5000);
 });
 /*==Auf Seite A==*/
 $(".bilda > div.bildheader > span.rechtsbuendig").live('click', function() {
@@ -103,6 +110,7 @@ $(".bilda > div.bildheader > span.rechtsbuendig").live('click', function() {
 $(".bilda > div.bildheader > span.linksbuendig").live('click', function() {
 	       $(ggbZiel).load(ggbQuelle);
 	        $.mobile.changePage($(C));
+	        setTimeout(einbggb, 10000);
 });
 $(".bilda").live("swipeleft", function(){
         $.mobile.changePage(B);
@@ -110,6 +118,7 @@ $(".bilda").live("swipeleft", function(){
 $('.bilda').live("swiperight", function(){
 	 $(ggbZiel).load(ggbQuelle);
         $.mobile.changePage($(C));
+        setTimeout(einbggb, 10000);
 });
 /*==Auf Seite B==*/
 	$(".bildb > div.bildheader > span.linksbuendig").live('click', function() {
@@ -118,7 +127,6 @@ $('.bilda').live("swiperight", function(){
 $(".bildb").live("swiperight", function(){
       $.mobile.changePage(A);
       });
-
 /*==Auf Seite C==*/
 	$(".bildc > div.bildheader > span.rechtsbuendig").live('click', function() {
 	       $('.bildcontent_ggb').html('<p style="margin: 80px; text-align: center; padding: 10px; border: 5px solid #333;">Zu diesem Werk ist leider keine Animation vorhanden.<br><br>Tippen Sie auf <i>Bild</i>, um zur&uuml;ckzukehren.</p>');
@@ -136,21 +144,37 @@ $(".zuruebersicht").live('click', function() {
 		$('.textfeld').html("");
 		$('.speicher').html("");
 });
-$('.bilda').live('pagecreate', function(){
-	$('.bilda').on('swipedown', function() {
+//$('.bilda').live('pagecreate', function(){
+	$('.bilda').live('swipedown', function() {
 		$.mobile.changePage('#indexa');
 		$('.textfeld').html("");
 		$('.speicher').html("");
 		$('.einbuebers').css('display', 'none');
 	});
-	$('.bilda').on('swipeup', function() {
+	$('.bilda').live('swipeup', function() {
 		$.mobile.changePage('#indexa');
 		$('.textfeld').html("");
 		$('.speicher').html("");
 		$('.einbuebers').css('display', 'none');
 	});
-});
 /*Mediaplayer erst nach erstem Bildaufruf anzeigen*/
-	$('.uebersichtsspan').live('click', function() {
+	$('#grid > li').live('click', function() {
 		$('#footer').css('display', 'block');
-	});
+});
+	
+//Texte
+	function Text ()  {
+			  var txtQuelle = "resources/texte/" + Bildnr + ".txt";
+			  var txtZiel = ".bildcontent_text p#text" + Bildnr;
+			  var txtSpeicher = ".bildcontent_text p#speicher" + Bildnr;
+				    
+				    $(txtSpeicher).load(txtQuelle, function(msg)  {
+				       	var myArray = msg.split("\n");
+						var Bildtext = "";
+				        for(var i=0;i<myArray.length;i++)
+				        {
+				        	var Bildtext = Bildtext + myArray[i] + "<br>";
+				        }
+					    $(txtZiel).html(Bildtext);
+				    });
+	}
