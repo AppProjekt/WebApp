@@ -55,7 +55,7 @@
                     .one(touchStopEvent, function (event) {
                         $this.unbind(touchMoveEvent, moveHandler);
                         if (start && stop) {
-                            if (stop.time - start.time < 1000 &&
+                            if (stop.time - start.time < 2000 &&
                                 Math.abs(start.coords[1] - stop.coords[1]) > 30 &&
                                 Math.abs(start.coords[0] - stop.coords[0]) < 75) {
                                 start.origin
